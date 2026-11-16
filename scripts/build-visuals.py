@@ -1,4 +1,4 @@
-"""Insert explicitly approved artwork into the static build."""
+"""Insert the authorized production artwork into the static build."""
 from pathlib import Path
 import html
 import json
@@ -25,7 +25,7 @@ def build_visuals(root):
         if entry['page'] != page:
             raise ValueError(f'Wrong page for {key}')
         if entry.get('approved') is not True:
-            return match[0]
+            raise ValueError(f'Production artwork is not ready: {key}')
         src = entry.get('src')
         if not src or not entry.get('alt', '').strip():
             raise ValueError(f'Approved slot needs a file and alt text: {key}')

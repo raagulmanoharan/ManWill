@@ -1,0 +1,225 @@
+@font-face {
+  font-family: ManwillFinalSans;
+  src: url('__FONT_DATA__') format('woff2');
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+}
+
+.final-art {
+  --fa-paper: #f1efe7;
+  --fa-ink: #192321;
+  --fa-sans: ManwillFinalSans, Arial, sans-serif;
+  width: calc(100% - 64px);
+  max-width: 1440px;
+  height: auto;
+  margin-inline: auto;
+  padding-block: 48px 72px;
+  color: var(--fa-ink);
+}
+
+.final-art,
+.final-art * {
+  box-sizing: border-box;
+}
+
+.final-art .final-art__heading {
+  margin: 0 0 32px;
+  font: 500 29px/1.1 var(--fa-sans);
+  letter-spacing: -0.025em;
+}
+
+.final-art .final-art__spreads {
+  display: grid;
+  gap: 72px;
+}
+
+.final-art .final-art__spread {
+  width: 100%;
+  min-width: 0;
+  margin-inline: auto;
+}
+
+.final-art .final-art__spread--landscape {
+  max-width: 1360px;
+}
+
+.final-art .final-art__spread--pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: 24px;
+}
+
+/* The complete poster keeps its native ratio. Only its photo window crops. */
+.final-art .final-art__canvas {
+  position: relative;
+  isolation: isolate;
+  container-type: inline-size;
+  width: 100%;
+  min-width: 0;
+  height: auto;
+  margin: 0;
+  background: var(--fa-paper);
+  color: var(--fa-ink);
+  font-family: var(--fa-sans);
+  font-style: normal;
+  font-synthesis: none;
+}
+
+.final-art .final-art__canvas--encounter {
+  aspect-ratio: 1536 / 1024;
+}
+
+.final-art .final-art__canvas--technical,
+.final-art .final-art__canvas--lifestyle {
+  aspect-ratio: 1122 / 1402;
+}
+
+.final-art .final-art__canvas p {
+  position: absolute;
+  z-index: 2;
+  margin: 0;
+  padding: 0;
+  text-wrap: nowrap;
+}
+
+.final-art .final-art__mark {
+  position: absolute;
+  z-index: 3;
+  display: block;
+  height: auto;
+  aspect-ratio: 1444 / 476;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.final-art .final-art__encounter-photo,
+.final-art .final-art__technical-photo,
+.final-art .final-art__lifestyle-photo {
+  position: absolute;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.final-art .final-art__canvas img {
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  object-fit: cover;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+}
+
+/* One identical headline treatment across every complete artwork. */
+.final-art .final-art__encounter-line,
+.final-art .final-art__technical-line,
+.final-art .final-art__lifestyle-line {
+  font: 600 9cqw/1 var(--fa-sans);
+  font-style: normal;
+  letter-spacing: -0.035em;
+}
+
+.final-art .final-art__encounter-line span,
+.final-art .final-art__technical-line span,
+.final-art .final-art__lifestyle-line span {
+  display: block;
+}
+
+/* Landscape: an open type field above a wide, close crop of the exchange. */
+.final-art .final-art__encounter-photo {
+  inset: 39% 0 0;
+}
+
+.final-art .final-art__encounter-photo img {
+  object-position: 50% 78%;
+}
+
+.final-art .final-art__encounter-line {
+  top: 5%;
+  left: 5%;
+}
+
+.final-art .final-art__encounter-mark {
+  top: 7%;
+  right: 5%;
+  width: 18%;
+}
+
+/* Coffee: the title sits in the photograph; only the mark occupies the foot. */
+.final-art .final-art__technical-photo {
+  inset: 0 0 10%;
+}
+
+.final-art .final-art__technical-photo img {
+  object-position: 50% 100%;
+}
+
+.final-art .final-art__technical-line {
+  top: 5%;
+  left: 5%;
+  color: var(--fa-paper);
+}
+
+.final-art .final-art__technical-mark {
+  bottom: 2%;
+  left: 5%;
+  width: 20%;
+}
+
+/* Hospitality: the same measured title above a broad photographic exchange. */
+.final-art .final-art__lifestyle-photo {
+  inset: 25% 0 10%;
+}
+
+.final-art .final-art__lifestyle-photo img {
+  object-position: 52% 50%;
+}
+
+.final-art .final-art__lifestyle-line {
+  top: 4.5%;
+  left: 5%;
+}
+
+.final-art .final-art__lifestyle-mark {
+  bottom: 2%;
+  right: 5%;
+  width: 20%;
+}
+
+.final-art .final-art__note {
+  margin: 28px 0 0;
+  max-width: 760px;
+  color: #71685d;
+  font: 400 13px/1.5 var(--fa-sans);
+}
+
+@media (max-width: 760px) {
+  .final-art .final-art__spread--pair {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 32px;
+  }
+}
+
+@media (max-width: 700px) {
+  .final-art {
+    width: calc(100% - 40px);
+    padding-block: 32px 48px;
+  }
+
+  .final-art .final-art__heading {
+    margin-bottom: 24px;
+    font-size: 26px;
+  }
+
+  .final-art .final-art__spreads {
+    gap: 32px;
+  }
+
+  .final-art .final-art__note {
+    margin-top: 24px;
+    font-size: 12px;
+  }
+}

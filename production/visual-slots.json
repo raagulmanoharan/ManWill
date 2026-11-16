@@ -1,53 +1,35 @@
 {
   "wordmark_source": "Use only supplied files. Hand-lettered SVG received at assets/brand/manwill-hand-lettered-v2.svg. Chunky serif wordmark is visible inline; original file still needed. All former agent wordmark studies are superseded.",
-  "generation_status": "Selected shirt and tray remain fixed and live. Five editorial compositions are complete for review: flash, high-key exposure, selective blur and grain, with expressive typography using the unchanged supplied SVG.",
+  "generation_status": "All sans-serif campaign typography. Twelve proposed artwork frames plus two verified photographs of the actual shop; full website production authorized.",
   "slots": [
     {
       "id": "cover-coffee",
       "page": "index.html",
-      "width": 2400,
-      "height": 1600,
-      "src": null,
-      "approved": false,
-      "alt": "",
+      "width": 1536,
+      "height": 1024,
+      "src": "assets/visuals/cover-coffee.webp",
+      "approved": true,
+      "alt": "Concept photograph of a drop of coffee falling into a glass server, with warm amber reflections.",
       "owner": "craft_images",
       "references": [
         "B1"
-      ],
-      "brief": "Photo only. Close to the coffee in the server, with the stream or a falling drop and warm reflections. Dark enough behind the two HTML text blocks. No baked-in headline, watermark or borrowed slogan. This is the only frame with a responsive photo crop; keep the action near the centre.",
-      "review": {
-        "file": "/workspace/scratch/manwill-previews/craft/cover-coffee-pilot.png",
-        "width": 1536,
-        "height": 1024,
-        "status": "awaiting_user_review"
-      }
+      ]
     },
     {
       "id": "people-candid",
       "page": "index.html",
-      "width": 1600,
-      "height": 2000,
-      "src": null,
-      "approved": false,
-      "alt": "",
+      "width": 1122,
+      "height": 1402,
+      "src": "assets/visuals/people-candid.webp",
+      "approved": true,
+      "alt": "Proposed Manwill campaign: a cropped seated person holding coffee, with red sans-serif Meet your brewer lettering and the Manwill wordmark.",
       "owner": "hospitality_images",
       "references": [
         "A3",
         "B3"
       ],
-      "brief": "A moment around the coffee counter with relaxed posture and a close crop. Hide faces completely; show hands, backs or a crop below the head. Available light or modest flash fill, restrained colour and natural detail. Any physical Manwill mark stays small. Preserve the full portrait.",
       "production_status": "editorial_revision_complete_for_review",
-      "wordmark_application": "Original supplied SVG as an intentional editorial HTML layer. Photo generation must contain no lettering or logos.",
-      "review": {
-        "file": "/workspace/scratch/manwill-previews/round-two/exports/people-candid.png",
-        "source_photo": "/workspace/scratch/manwill-previews/round-two/people-candid-editorial-fresh.png",
-        "width": 1122,
-        "height": 1402,
-        "status": "awaiting_user_review",
-        "composition": "production/round-two/section.html",
-        "supporting_copy": "MAKE YOURSELF A REGULAR.",
-        "wordmark_fidelity": "Original supplied SVG d attribute used unchanged, with preserved aspect ratio."
-      }
+      "wordmark_application": "Original supplied SVG as an intentional editorial HTML layer. Photo generation must contain no lettering or logos."
     },
     {
       "id": "people-brewer",
@@ -56,49 +38,27 @@
       "height": 1402,
       "src": "assets/visuals/people-brewer.webp",
       "approved": true,
-      "alt": "Proposed Manwill workwear image: a brewer seen from behind, face out of frame, tying an apron over a red T-shirt with the yellow Manwill mark and Make yourself a regular.",
+      "alt": "Proposed workwear photograph: a brewer from behind tying a green apron, wearing the selected red T-shirt with large yellow Manwill lettering and Ask me about your coffee.",
       "owner": "hospitality_images",
       "references": [
         "A8"
-      ],
-      "brief": "Selected image is locked: use people-brewer-brand-preview.png unchanged. No more print-realism edits or logo regeneration; user explicitly restored this version because the later wordmark looked modified.",
-      "review": {
-        "file": "/workspace/scratch/manwill-previews/hospitality/people-brewer-brand-preview.png",
-        "width": 1122,
-        "height": 1402,
-        "status": "user_selected_previous_image",
-        "revision": "Restored the previous published straight-on shirt image unchanged. User preferred its wordmark to the fresh angled frame.",
-        "supporting_copy": "MAKE YOURSELF A REGULAR.",
-        "copy_status": "selected_for_this_application",
-        "rejected_alternative": "/workspace/scratch/manwill-previews/hospitality/people-brewer-fresh-printed-preview.png"
-      }
+      ]
     },
     {
       "id": "people-social",
       "page": "index.html",
-      "width": 1800,
-      "height": 1800,
-      "src": null,
-      "approved": false,
-      "alt": "",
+      "width": 1254,
+      "height": 1254,
+      "src": "assets/visuals/people-social.webp",
+      "approved": true,
+      "alt": "Proposed Manwill campaign: people sharing coffee at a sunlit counter, faces out of view, with Ask me about your coffee in large sans-serif lettering.",
       "owner": "hospitality_images",
       "references": [
         "A7",
         "B4"
       ],
-      "brief": "A square image and type composition. Candid photograph with face hidden, close crop, compact bold sans with one deliberate expressive serif/script gesture if approved. Lettering interacts with the photograph. Physical branding is discreet; poster typography may be large. No social-app icons, copied slogan or third-party handles.",
       "production_status": "editorial_revision_complete_for_review",
-      "wordmark_application": "Original supplied SVG as an intentional editorial HTML layer. Photo generation must contain no lettering or logos.",
-      "review": {
-        "file": "/workspace/scratch/manwill-previews/round-two/exports/people-social.png",
-        "source_photo": "/workspace/scratch/manwill-previews/round-two/people-social-editorial.png",
-        "width": 1254,
-        "height": 1254,
-        "status": "awaiting_user_review",
-        "composition": "production/round-two/section.html",
-        "supporting_copy": "Make yourself a regular.",
-        "wordmark_fidelity": "Original supplied SVG d attribute used unchanged, with preserved aspect ratio."
-      }
+      "wordmark_application": "Original supplied SVG as an intentional editorial HTML layer. Photo generation must contain no lettering or logos."
     },
     {
       "id": "discovery-tray",
@@ -107,184 +67,126 @@
       "height": 1448,
       "src": "assets/visuals/discovery-tray.webp",
       "approved": true,
-      "alt": "Proposed Manwill print application: a small cream card with dark hand-lettering beside a coffee glass on a steel tray and rust-coloured linen.",
+      "alt": "Selected Manwill print concept: a small cream card with a discreet dark wordmark beside a coffee glass on a steel tray over brown linen.",
       "owner": "print_images",
       "references": [
         "A2"
-      ],
-      "brief": "Small off-white rectangular card on an everyday steel tray with rust/brown cloth and a coffee glass. Card about a third of the image width; quiet supplied mark about a third of the card. Diffuse window light, subtle paper and metal detail, casual editorial arrangement. Show the whole card. No exaggerated distressing or large ornamental scallops.",
-      "review": {
-        "file": "/workspace/scratch/manwill-previews/print/discovery-tray-pilot-v2.png",
-        "width": 1086,
-        "height": 1448,
-        "status": "user_selected_option_1",
-        "revision": "Smaller card and wordmark, plain stock, softer light, more surrounding cloth.",
-        "variant": {
-          "file": "/workspace/scratch/manwill-previews/print/discovery-tray-pilot-variant.png",
-          "width": 1086,
-          "height": 1448,
-          "status": "retained_as_alternative_not_selected",
-          "direction": "Top-down full vertical steel tray, small scalloped cream card, quiet dark mark and factual secondary type. Closer to A2."
-        }
-      }
+      ]
     },
     {
       "id": "discovery-menu",
       "page": "index.html",
-      "width": 1800,
-      "height": 2400,
-      "src": null,
-      "approved": false,
-      "alt": "",
+      "width": 1086,
+      "height": 1448,
+      "src": "assets/visuals/discovery-menu.webp",
+      "approved": true,
+      "alt": "Proposed menu photograph: a cream booklet reading Tell us what you drink at home and We’ll help you choose beside a coffee glass, with the Manwill mark outside the paper.",
       "owner": "print_images",
       "references": [
         "A2"
       ],
-      "brief": "A related menu and cup application in use, with the supplied wordmark. Continue the material world of the tray photograph. No invented prices, origin claims or unconfirmed menu items. Keep the physical mark small and light natural. Follow the revised tray direction; avoid a glossy product mockup.",
       "production_status": "editorial_revision_complete_for_review",
-      "wordmark_application": "Original supplied SVG as an intentional editorial HTML layer. Photo generation must contain no lettering or logos.",
-      "review": {
-        "file": "/workspace/scratch/manwill-previews/round-two/exports/discovery-menu.png",
-        "source_photo": "/workspace/scratch/manwill-previews/round-two/discovery-menu-editorial.png",
-        "width": 1086,
-        "height": 1448,
-        "status": "awaiting_user_review",
-        "composition": "production/round-two/section.html",
-        "supporting_copy": "Tell us what you like. We\u2019ll help you choose.",
-        "wordmark_fidelity": "Original supplied SVG d attribute used unchanged, with preserved aspect ratio."
-      }
+      "wordmark_application": "Original supplied SVG as an intentional editorial HTML layer. Photo generation must contain no lettering or logos."
     },
     {
       "id": "handwritten-poster",
       "page": "index.html",
-      "width": 1800,
-      "height": 2400,
-      "src": null,
-      "approved": false,
-      "alt": "",
+      "width": 1086,
+      "height": 1448,
+      "src": "assets/visuals/handwritten-poster.webp",
+      "approved": true,
+      "alt": "Proposed Manwill poster: Tell us what you drink at home in bold sans-serif on burgundy, with a small guest-side coffee photograph and the Manwill wordmark.",
       "owner": "poster agent, to be assigned after approval",
       "references": [
         "A1"
-      ],
-      "brief": "Portrait poster with large expressive handwriting, a restrained photographic insert and a deep warm ground. Maintain the image/type scale relationship of the reference without copying the phrase or image. Lettering copy requires review; lettering is not a replacement Manwill wordmark."
+      ]
     },
     {
       "id": "craft-pour",
       "page": "index.html",
-      "width": 1600,
-      "height": 2000,
-      "src": null,
-      "approved": false,
-      "alt": "",
+      "width": 1122,
+      "height": 1402,
+      "src": "assets/visuals/craft-pour.webp",
+      "approved": true,
+      "alt": "Proposed Manwill coffee poster: a close pour-over photograph with bold red sans-serif lettering, A front-row seat to your coffee.",
       "owner": "craft_images",
       "references": [
         "B2"
       ],
-      "brief": "Close manual pour-over photograph with warm, imperfect light and a large editorial serif line that belongs to the image. Regular/italic contrast should be purposeful, as in the Lunet reference. Do not copy Small Cup. Big Shift., Love Lunet, or its handle. Approved Manwill wordmark only.",
       "production_status": "editorial_revision_complete_for_review",
-      "wordmark_application": "Original supplied SVG as an intentional editorial HTML layer. Photo generation must contain no lettering or logos.",
-      "review": {
-        "file": "/workspace/scratch/manwill-previews/round-two/exports/craft-pour.png",
-        "source_photo": "/workspace/scratch/manwill-previews/round-two/craft-pour-editorial.png",
-        "width": 1122,
-        "height": 1402,
-        "status": "awaiting_user_review",
-        "composition": "production/round-two/section.html",
-        "supporting_copy": "Coffee, by hand.",
-        "wordmark_fidelity": "Original supplied SVG d attribute used unchanged, with preserved aspect ratio."
-      }
+      "wordmark_application": "Original supplied SVG as an intentional editorial HTML layer. Photo generation must contain no lettering or logos."
     },
     {
       "id": "craft-poster",
       "page": "index.html",
-      "width": 1600,
-      "height": 2000,
-      "src": null,
-      "approved": false,
-      "alt": "",
+      "width": 1122,
+      "height": 1402,
+      "src": "assets/visuals/craft-poster.webp",
+      "approved": true,
+      "alt": "Proposed Manwill counter poster with brewing equipment and green tiles, bold cream Watch your coffee being made lettering and the Manwill wordmark.",
       "owner": "craft_images",
       "references": [
         "A6"
       ],
-      "brief": "A second portrait poster with expressive serif type over a believable working coffee setting. Use the Lake House reference for type weight, scale, and its relationship to a dark photograph, not its oven, brand or wording.",
       "production_status": "editorial_revision_complete_for_review",
-      "wordmark_application": "Original supplied SVG as an intentional editorial HTML layer. Photo generation must contain no lettering or logos.",
-      "review": {
-        "file": "/workspace/scratch/manwill-previews/round-two/exports/craft-poster.png",
-        "source_photo": "/workspace/scratch/manwill-previews/round-two/craft-poster-editorial.png",
-        "width": 1122,
-        "height": 1402,
-        "status": "awaiting_user_review",
-        "composition": "production/round-two/section.html",
-        "supporting_copy": "BREWED BY HAND",
-        "wordmark_fidelity": "Original supplied SVG d attribute used unchanged, with preserved aspect ratio."
-      }
+      "wordmark_application": "Original supplied SVG as an intentional editorial HTML layer. Photo generation must contain no lettering or logos."
     },
     {
       "id": "landscape-poster",
       "page": "index.html",
-      "width": 2400,
-      "height": 1600,
-      "src": null,
-      "approved": false,
-      "alt": "",
+      "width": 1536,
+      "height": 1024,
+      "src": "assets/visuals/landscape-poster.webp",
+      "approved": true,
+      "alt": "Proposed Manwill campaign with a rectangular photograph of a brewer serving a guest, bold Meet your brewer typography and the Manwill wordmark.",
       "owner": "poster agent, to be assigned after approval",
       "references": [
         "A5"
-      ],
-      "brief": "Wide graphic composition with serif type and a shaped photographic opening. Preserve the Sunday Loftas balance of flat colour, image and type without automatically copying its keyhole. Review the shape and copy before production."
+      ]
     },
     {
       "id": "compare-technical",
       "page": "index.html",
-      "width": 1600,
-      "height": 2000,
-      "src": null,
-      "approved": false,
-      "alt": "",
+      "width": 1122,
+      "height": 1402,
+      "src": "assets/visuals/compare-technical.webp",
+      "approved": true,
+      "alt": "Proposed coffee-led Manwill artwork: A front-row seat in bold sans-serif with a close view of manual brewing equipment.",
       "owner": "comparison agent, to be assigned after approval",
-      "references": [],
-      "brief": "A positive, well-designed example that gives coffee knowledge more emphasis. Keep it high-level. This is one side of a balance to explore, not a bad-design example or a parody of a competitor."
+      "references": []
     },
     {
       "id": "compare-lifestyle",
       "page": "index.html",
-      "width": 1600,
-      "height": 2000,
-      "src": null,
-      "approved": false,
-      "alt": "",
+      "width": 1122,
+      "height": 1402,
+      "src": "assets/visuals/compare-lifestyle.webp",
+      "approved": true,
+      "alt": "Proposed people-led Manwill artwork: a guest and brewer meeting over coffee, with bold sans-serif Meet your brewer typography.",
       "owner": "comparison agent, to be assigned after approval",
-      "references": [],
-      "brief": "A positive, well-designed example that gives the place and atmosphere more emphasis. Same display size as the coffee-led example. Explore how both qualities could contribute to Manwill; no criticism of the current brand."
+      "references": []
     },
     {
-      "id": "place-day",
-      "page": "research.html",
-      "width": 765,
-      "height": 1020,
-      "src": null,
-      "approved": false,
-      "alt": "",
-      "owner": "parent",
-      "references": [
-        "A10"
-      ],
-      "brief": "Use the actual daytime storefront photo supplied by the user. Do not generate a substitute, alter its sign or replace the existing logo. Its local file path has not yet been resolved."
+      "id": "current-shop-day",
+      "page": "index.html",
+      "width": 900,
+      "height": 1599,
+      "src": "assets/visuals/current-shop-day.jpg",
+      "approved": true,
+      "alt": "Actual Manwill Brew storefront with the red and yellow sign, black-framed glass, wooden entrance and tree at the front. Owner-posted Google Maps photograph, June 2026.",
+      "owner": "real_shop_research",
+      "source_type": "authentic_public_photograph"
     },
     {
-      "id": "place-night",
-      "page": "research.html",
-      "width": 574,
-      "height": 1020,
-      "src": null,
-      "approved": false,
-      "alt": "",
-      "owner": "parent",
-      "references": [
-        "A9"
-      ],
-      "brief": "Use the actual nighttime storefront photo supplied by the user. Preserve the whole portrait, including its surroundings. Do not generate a substitute. Its local file path has not yet been resolved."
+      "id": "current-shop-counter",
+      "page": "index.html",
+      "width": 360,
+      "height": 640,
+      "src": "assets/visuals/current-shop-counter.jpg",
+      "approved": true,
+      "alt": "Actual Manwill Brew counter, with manual brewing tools and glassware on pale stone beneath woven pendant lights. Photograph from Manwill Brew’s public reel.",
+      "owner": "real_shop_research",
+      "source_type": "authentic_public_photograph"
     }
   ],
   "wordmarks": [
@@ -303,5 +205,6 @@
     "src": null,
     "status": "visible_in_chat_original_file_needed"
   },
-  "photography_direction": "Latest user direction: distinctly editorial photography close to the supplied references, with direct flash, high-key highlights, selective motion/foreground blur, visible film grain and noise. Vary these camera qualities across images instead of applying one uniform look. Hide faces and preserve plausible anatomy, equipment and materials. Grain must not become embossed/repeating swirls or fake paper distress. Selected shirt and tray stay unchanged."
+  "photography_direction": "Latest user direction: distinctly editorial photography close to the supplied references, with direct flash, high-key highlights, selective motion/foreground blur, visible film grain and noise. Vary these camera qualities across images instead of applying one uniform look. Hide faces and preserve plausible anatomy, equipment and materials. Grain must not become embossed/repeating swirls or fake paper distress. Selected shirt and tray stay unchanged.",
+  "authorization": "Latest explicit request: Go ahead and build out the website. Generate the image, build the full website. Review it and give me the link."
 }

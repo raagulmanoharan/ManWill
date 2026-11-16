@@ -1,0 +1,156 @@
+@font-face {
+  font-family: ManwillDiscoverySans;
+  src: url('__FONT_DATA__') format('woff2');
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+}
+
+.discovery-art,
+.discovery-art__canvas {
+  --da-wine: #561d2a;
+  --da-cream: #f1ebda;
+  --da-butter: #eee59d;
+  --da-sans: ManwillDiscoverySans, Arial, sans-serif;
+  font-family: var(--da-sans);
+  font-style: normal;
+  font-synthesis: none;
+}
+
+.discovery-art,
+.discovery-art * {
+  box-sizing: border-box;
+}
+
+.discovery-art {
+  width: calc(100% - 48px);
+  max-width: 1086px;
+  margin-inline: auto;
+  padding-block: 40px;
+}
+
+.discovery-art__spreads {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 48px;
+}
+
+/* Each canvas retains the complete 1086 × 1448 portrait at every width. */
+.discovery-art__canvas {
+  position: relative;
+  isolation: isolate;
+  container-type: inline-size;
+  width: 100%;
+  min-width: 0;
+  height: auto;
+  aspect-ratio: 1086 / 1448;
+  margin: 0;
+  overflow: hidden;
+  border: 0;
+  border-radius: 0;
+  color: var(--da-cream);
+  background: var(--da-wine);
+}
+
+.discovery-art__menu-photo {
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  object-fit: contain;
+}
+
+/* The original SVG is an editorial layer, separate from the printed cover. */
+.discovery-art__mark {
+  position: absolute;
+  z-index: 3;
+  display: block;
+  height: auto;
+  aspect-ratio: 1444 / 476;
+  overflow: visible;
+  color: var(--da-cream);
+  pointer-events: none;
+}
+
+.discovery-art__menu-mark {
+  top: 6.2%;
+  left: 6%;
+  width: 23%;
+}
+
+.discovery-art__poster-copy {
+  position: absolute;
+  z-index: 2;
+  top: 5.5%;
+  left: 6%;
+  margin: 0;
+  padding: 0;
+  color: var(--da-cream);
+  font-family: var(--da-sans);
+  font-style: normal;
+  font-size: 9cqw;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.035em;
+  text-wrap: nowrap;
+}
+
+.discovery-art__poster-copy > span {
+  display: block;
+  white-space: nowrap;
+}
+
+.discovery-art__poster-photo {
+  position: absolute;
+  z-index: 1;
+  top: 34%;
+  right: 5.6%;
+  width: 59%;
+  aspect-ratio: 1086 / 1448;
+  overflow: hidden;
+  border: 0;
+  border-radius: 0;
+}
+
+.discovery-art__poster-photo img {
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  object-fit: contain;
+}
+
+.discovery-art__poster-mark {
+  top: 78%;
+  left: 6%;
+  width: 23%;
+  color: var(--da-butter);
+}
+
+.discovery-art__note {
+  margin: 24px 0 0;
+  color: #62594f;
+  font: normal 400 13px/1.5 var(--da-sans);
+}
+
+@media (max-width: 700px) {
+  .discovery-art {
+    width: calc(100% - 40px);
+    padding-block: 24px;
+  }
+
+  .discovery-art__spreads {
+    gap: 32px;
+  }
+
+  .discovery-art__note {
+    margin-top: 20px;
+    font-size: 12px;
+  }
+}

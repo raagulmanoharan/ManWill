@@ -1,89 +1,115 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-type="service" data-radius="sharp" data-buttons="block">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Branding ideas for Manwill</title>
-  <meta name="description" content="A proposal for how Manwill could build a stronger identity around the way it makes and serves coffee.">
-  <meta name="theme-color" content="#f3f1e9">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Branding ideas for Manwill — Raagul</title>
+  <meta name="description" content="Raagul’s look at Manwill’s current identity, three connected opportunities, and how the brand could develop.">
+  <meta name="page-type" content="service">
+  <meta name="site-kind" content="other">
+  <meta name="theme-color" content="#f3f0e7">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Branding ideas for Manwill">
-  <meta property="og:description" content="Research and design directions for Manwill Brew.">
-  <meta name="twitter:card" content="summary">
+  <meta property="og:description" content="A look at the current brand, a direction to explore, and the work I could help with.">
+  <meta property="og:image" content="https://raagulmanoharan.github.io/ManWill/assets/visuals/cover-coffee.webp">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="https://raagulmanoharan.github.io/ManWill/">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60'%3E%3Crect width='60' height='60' fill='%23e42b25'/%3E%3Ctext x='18' y='43' font-family='Arial' font-size='44' fill='%23f3f1e9'%3Er%3C/text%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60'%3E%3Crect width='60' height='60' fill='%2399211b'/%3E%3Ctext x='17' y='44' font-family='Arial,sans-serif' font-weight='700' font-size='44' fill='%23f3f0e7'%3Er%3C/text%3E%3C/svg%3E">
   <link rel="preload" href="assets/inter-tight-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="hero-motion.css">
   <script src="script.js" defer></script>
+  <script src="hero-motion.js" defer></script>
 </head>
 <body>
-<a class="skip-link" href="#main">Skip to the page</a>
-<header class="site-nav">
-  <a class="author" href="#top">Raagul<span>For Manwill</span></a>
-  <nav aria-label="Main navigation"><a href="#people">The ideas</a><a href="research.html">Research</a><a href="#conversation">Let’s talk</a></nav>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-nav page-width">
+  <a class="author" href="#top" aria-label="Raagul, for Manwill">Raagul<span>For Manwill</span></a>
+  <nav aria-label="Main navigation"><a href="#current-brand">The starting point</a><a href="research.html">Research</a><a href="#conversation">Let’s talk</a></nav>
 </header>
 <main id="main">
-  <section class="cover" id="top" aria-labelledby="cover-title">
-    <div class="cover-stage">
-      <figure class="visual-slot cover-photo" data-visual="cover-coffee" data-format="landscape" aria-label="Space for a close photograph of coffee brewing"><span class="slot-placeholder">Coffee close-up</span></figure>
-      <div class="cover-type"><h1 id="cover-title">Branding ideas<br>for Manwill.</h1><p>A proposal for how Manwill could build a stronger identity around the way it makes and serves coffee.</p></div>
+  <section class="cover" id="top" aria-labelledby="cover-title" data-enter>
+    <div class="cover-intro page-width">
+      <h1 id="cover-title">Branding ideas<br>for Manwill.</h1>
+      <div class="cover-note"><p>A look at Manwill’s identity, one direction built around three connected ideas, and the work I could help with.</p><a class="text-link" href="#current-brand">See the thinking <span aria-hidden="true">↓</span></a></div>
     </div>
-    <div class="cover-foot page-width"><span>Prepared for Manwill Brew</span><a href="#thinking">View the proposal</a></div>
+    <div class="cover-stage page-width" id="hero-motion"><figure class="visual-slot cover-photo" data-visual="cover-coffee" data-format="landscape"></figure></div>
   </section>
 
-  <section class="thinking page-width" id="thinking" aria-labelledby="thinking-title">
-    <div class="thinking-heading"><h2 id="thinking-title">What the branding<br>could do.</h2><p>Manwill already has a clear focus on manual brewing. The branding can build on that and help people recognise the place wherever they come across it.</p></div>
-    <details class="research-drawer">
-      <summary><span>What the research suggests</span><span class="disclosure-sign" aria-hidden="true"></span></summary>
-      <div class="research-content"><p>The references show how coffee businesses give different emphasis to atmosphere, expertise and discovery. They suggest a few ways Manwill could build on its own strengths.</p><a href="research.html">Research & references</a></div>
-    </details>
-    <nav class="study-index" aria-label="The three ideas"><a href="#people">The people</a><a href="#discovery">Trying something new</a><a href="#craft">Watching it being made</a></nav>
-  </section>
-
-  <section class="chapter" id="people" aria-labelledby="people-title">
-    <div class="chapter-heading page-width"><h2 id="people-title">The people<br>behind Manwill.</h2><p>The people behind the coffee can give Manwill a more personal and recognisable presence.</p></div>
-    <div class="people-pair page-width">
-      <figure class="visual-slot" data-visual="people-candid" data-format="portrait" aria-label="Space for a candid coffee photograph with lettering"><span class="slot-placeholder">People at the bar</span></figure>
-      <figure class="visual-slot" data-visual="people-brewer" data-format="portrait" aria-label="Space for a portrait of a brewer"><span class="slot-placeholder">The person making the coffee</span></figure>
+  <section class="current-brand page-width" id="current-brand" aria-labelledby="current-title">
+    <div class="current-copy">
+      <h2 id="current-title">The current<br>identity.</h2>
+      <p>The warm red-and-yellow sign gives Manwill a recognisable street presence. Inside, a compact counter brings the brewing into view. These are useful cues to carry into the menu, photography and digital identity.</p>
+      <a class="text-link" href="research.html">Read the context <span aria-hidden="true">↗</span></a>
     </div>
-    <div class="standalone-artwork page-width">
-      <figure class="visual-slot" data-visual="people-social" data-format="square" aria-label="Space for a square photograph and type composition"><span class="slot-placeholder">Photo & lettering</span></figure>
+    <div class="current-images">
+      <figure class="visual-slot current-photo" data-visual="current-shop-day" data-format="print"></figure>
+      <figure class="visual-slot current-photo" data-visual="current-shop-counter" data-format="tall"></figure>
     </div>
   </section>
 
-  <section class="chapter" id="discovery" aria-labelledby="discovery-title">
-    <div class="chapter-heading page-width"><h2 id="discovery-title">Making coffee<br>more approachable.</h2><p>An approachable identity can make more people feel comfortable exploring what Manwill has to offer.</p></div>
-    <div class="visual-pair page-width">
-      <figure class="visual-slot" data-visual="discovery-tray" data-format="print" aria-label="Space for a printed card photographed on a steel tray"><span class="slot-placeholder">A card on the table</span></figure>
-      <figure class="visual-slot" data-visual="discovery-menu" data-format="print" aria-label="Space for a photograph of the menu and cup"><span class="slot-placeholder">Menu & cup</span></figure>
+  <section class="direction" id="people" aria-labelledby="people-title">
+    <div class="direction-lead page-width">
+      <div class="direction-copy">
+        <h2 id="people-title">A personal encounter<br>with the brewer.</h2>
+        <p>Manwill’s compact counter suggests a setting for direct conversation. I would lead with the encounter between guest and brewer. People-focused photographs and an “Ask me about your coffee” shirt make the invitation visible. Discovery and making support the same relationship.</p>
+        <p class="design-rationale">The wordmark’s loose, rounded lettering suits a small bar built around conversation. I’d keep the supporting type clear and consistent, with red drawn from the existing sign and warm neutrals around the photographs. The photographs focus on hands, exchanges and brewing, so the identity stays close to the experience at the counter.</p>
+        <details class="research-drawer">
+          <summary><span>Why this direction</span><span class="disclosure-sign" aria-hidden="true"></span></summary>
+          <div class="research-content"><p>Coffee Ideas, Subko’s Bloom Bar and Blue Tokai’s workshops connect expertise with experience in different ways. Manwill’s compact counter suggests a setting for direct conversation with the brewer. That is a direction to test with the team.</p><a class="text-link" href="research.html">Read the research <span aria-hidden="true">↗</span></a></div>
+        </details>
+      </div>
+      <figure class="visual-slot" data-visual="people-social" data-format="square"></figure>
     </div>
-    <div class="standalone-artwork page-width">
-      <figure class="visual-slot" data-visual="handwritten-poster" data-format="print" aria-label="Space for a portrait poster with handwriting and a small photograph"><span class="slot-placeholder">Lettering & a photograph</span></figure>
-    </div>
-  </section>
-
-  <section class="chapter" id="craft" aria-labelledby="craft-title">
-    <div class="chapter-heading page-width"><h2 id="craft-title">The care behind<br>the coffee.</h2><p>Making the brewing more visible can help people appreciate the care that goes into each cup.</p></div>
-    <div class="visual-pair page-width">
-      <figure class="visual-slot" data-visual="craft-pour" data-format="portrait" aria-label="Space for a close pour-over photograph with serif lettering"><span class="slot-placeholder">The pour</span></figure>
-      <figure class="visual-slot" data-visual="craft-poster" data-format="portrait" aria-label="Space for a poster combining a photograph and large serif type"><span class="slot-placeholder">Coffee poster</span></figure>
-    </div>
-    <figure class="visual-slot wide-artwork" data-visual="landscape-poster" data-format="landscape" aria-label="Space for a wide poster with a photograph inside a shaped opening"><span class="slot-placeholder">Wide poster</span></figure>
-  </section>
-
-  <section class="comparisons" aria-labelledby="comparison-title">
-    <div class="chapter-heading page-width"><h2 id="comparison-title">Coffee and<br>a sense of place.</h2><p>Coffee knowledge and a sense of place can both shape the identity. The aim is to find a balance that suits Manwill.</p></div>
-    <div class="comparison-pair page-width">
-      <article><figure class="visual-slot" data-visual="compare-technical" data-format="portrait" aria-label="Space for a visual direction that highlights coffee knowledge"><span class="slot-placeholder">Coffee-led direction</span></figure><div class="comparison-copy"><h3>Coffee knowledge</h3><p>Showing the thought and care behind the coffee.</p></div></article>
-      <article><figure class="visual-slot" data-visual="compare-lifestyle" data-format="portrait" aria-label="Space for a visual direction that highlights a sense of place"><span class="slot-placeholder">Place-led direction</span></figure><div class="comparison-copy"><h3>A sense of place</h3><p>Giving people a feel for Manwill before they arrive.</p></div></article>
+    <div class="art-pair page-width">
+      <figure class="visual-slot" data-visual="people-candid" data-format="portrait"></figure>
+      <figure class="visual-slot" data-visual="people-brewer" data-format="portrait"></figure>
     </div>
   </section>
 
-  <section class="invitation page-width" id="conversation" aria-labelledby="conversation-title">
-    <h2 id="conversation-title">What we could<br>work on together.</h2>
-    <div class="invitation-note"><p>Develop a clear direction for Manwill, then turn it into a consistent identity people can recognise.</p><p>The ideas here are a starting point for that conversation.</p><button id="reply-button" class="reply-button">Copy a reply <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="13" rx="1"/><path d="M16 8V3H3v13h5"/></svg></button><p class="reply-help">To continue the conversation on Instagram.</p><p id="reply-status" role="status"></p><div id="reply-fallback" hidden><label for="reply-text">Your message</label><textarea id="reply-text" readonly>Hi Raagul, we’ve had a look at the Manwill proposal. Let’s find a time to discuss it.</textarea></div><noscript><p>Reply to Raagul in the existing Instagram conversation.</p></noscript></div>
+  <section class="discovery" id="discovery" aria-labelledby="discovery-title">
+    <div class="support-heading page-width"><p class="section-label">Support it through discovery</p><h2 id="discovery-title">Start with what<br>people already drink.</h2></div>
+    <div class="discovery-lead page-width">
+      <figure class="visual-slot" data-visual="handwritten-poster" data-format="print"></figure>
+      <div class="discovery-story"><p>“Tell us what you drink at home” starts with familiar preferences. On a menu or card, that question gives a newcomer a way into the conversation and helps the brewer guide the choice.</p><figure class="visual-slot" data-visual="landscape-poster" data-format="landscape"></figure></div>
+    </div>
+    <div class="art-pair page-width">
+      <figure class="visual-slot" data-visual="discovery-tray" data-format="print"></figure>
+      <figure class="visual-slot" data-visual="discovery-menu" data-format="print"></figure>
+    </div>
+  </section>
+
+  <section class="craft" id="craft" aria-labelledby="craft-title">
+    <div class="craft-heading page-width"><div><p class="section-label">Support it through the making</p><h2 id="craft-title">Let the process<br>be part of the visit.</h2></div><p>Close brewing photographs and the coffee-to-wordmark motion make the process part of the identity. They carry the gestures of preparation beyond the counter and suggest the anticipation of watching a cup take shape.</p></div>
+    <div class="art-pair page-width">
+      <figure class="visual-slot" data-visual="craft-pour" data-format="portrait"></figure>
+      <figure class="visual-slot" data-visual="craft-poster" data-format="portrait"></figure>
+    </div>
+  </section>
+
+  <section class="comparisons page-width" aria-labelledby="comparison-title">
+    <div class="comparison-heading"><h2 id="comparison-title">Keep the coffee<br>and the company.</h2><p>Expertise gives people confidence. Hospitality gives them a reason to connect. The identity can make room for both.</p></div>
+    <div class="comparison-pair">
+      <div class="comparison-direction"><h3>Coffee knowledge</h3><figure class="visual-slot" data-visual="compare-technical" data-format="portrait"></figure></div>
+      <div class="comparison-direction"><h3>A sense of place</h3><figure class="visual-slot" data-visual="compare-lifestyle" data-format="portrait"></figure></div>
+    </div>
+  </section>
+
+  <section class="invitation" id="conversation" aria-labelledby="conversation-title">
+    <div class="invitation-inner page-width">
+      <div class="invitation-heading"><h2 id="conversation-title">What I can<br>help with.</h2></div>
+      <div class="invitation-note">
+        <p>I’m Raagul. I can help define the positioning, develop the identity and language, direct photography, and apply the work across menus, the space and digital communication.</p>
+        <p>Let’s talk about what you want Manwill to become and which parts of this feel right.</p>
+        <button id="reply-button" class="reply-button" type="button" aria-describedby="reply-help"><span>Copy a reply to Raagul</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 8h12v13H8zM16 8V3H3v13h5"/></svg></button>
+        <p class="reply-help" id="reply-help">Paste it into our existing Instagram conversation.</p>
+        <p id="reply-status" role="status" aria-live="polite" aria-atomic="true"></p>
+        <div id="reply-fallback" hidden><label for="reply-text">Your reply to Raagul</label><textarea id="reply-text" rows="4" readonly>Hi Raagul, we’ve had a look at the Manwill proposal. Let’s find a time to discuss it.</textarea></div>
+        <noscript><p class="reply-help">Reply directly to Raagul in the existing Instagram conversation.</p></noscript>
+      </div>
+    </div>
   </section>
 </main>
-<footer class="site-footer page-width"><span>Raagul</span><p>Branding proposal for Manwill Brew.</p><a href="research.html">Research</a><a href="#top">Back to top</a></footer>
+<footer class="site-footer page-width"><a class="footer-author" href="#top">Raagul</a><p>For Manwill Brew.<br>Design applications are proposed concepts.</p><nav aria-label="Footer navigation"><a href="research.html">Research & sources</a><a href="#top">Back to top <span aria-hidden="true">↑</span></a></nav></footer>
 </body>
 </html>

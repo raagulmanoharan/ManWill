@@ -1,18 +1,32 @@
-# Read this before resuming image work
+# Manwill visual handoff
 
-Raagul has supplied the hand-lettered SVG at `assets/brand/manwill-hand-lettered-v2.svg` and asked the agents to resume. Three first-round pilots are complete. The user selected the plain-card tray and restored the previous straight-on yellow T-shirt. He explicitly authorized the next set of work. The chunky serif wordmark and coffee-lettering image are visible inline in chat but their original files are still needed. Use supplied files only. The old studies under `assets/identity/`, including the misleadingly named `manwill-primary`, must not be used. They were superseded by the user.
+The user has authorized the full website, remaining image generation, review and publication on GitHub Pages. This supersedes earlier per-image approval gates. All twelve proposed artwork frames and two authentic shop photographs are part of that production brief.
 
-The user explicitly authorized the next set of work after selecting the first applications. Proceed with five new pieces: people-candid, people-social, discovery-menu, craft-pour and craft-poster. No further permission is needed to produce this set and show it on the review page. Keep other future concepts pending. Do not alter the two selected application images.
+## Latest design direction
 
-The website is a personal proposal to the café, not its finished customer-facing website. The images should demonstrate the work Raagul could do. Generated staff or interiors must be described as proposed images, not documentary photographs. Once a generated image is approved for use, include that distinction naturally in its alt text or an accompanying note.
+The user's latest steering overrides the serif treatments described in earlier reference notes. Use sans-serif throughout the website and all authored image text. Active artwork uses Inter Tight variable, with every headline line at 9cqw, weight600, line-height1 and tracking−.035em. Do not enlarge individual words. Website headings also share one size at each breakpoint. The supplied organic wordmark remains original artwork; existing signage in real shop photographs remains unaltered.
 
-## Latest photography direction
+The page must explain why the proposed direction follows the research: lead with the brewer–guest relationship; make discovery approachable through familiar preferences; use visible making to express the care in the experience. Explain the wordmark, colour, type and photography choices briefly, next to the work. Show Raagul’s analysis and offer, not an unexplained gallery.
 
-Keep the tray and card branding discreet. The user liked the smaller card preview and requested a second variant closer to A2. The T-shirt has a specific exception: a large warm-yellow supplied wordmark across the back, with lightly worn ink and a small supporting line in the brand’s own voice. Leave room for the person and setting. Poster headlines may also use the large scale shown in the references.
+## Identity and copy
 
-Hide faces throughout the proposed people photography. Prefer a rear view, a crop below the head, or hands at work. Check mirrors and reflections too. A8 is now the framing reference for the brewer; A4 does not authorize a frontal face. Never distort garments or poses just to make a logo visible. From behind a normal apron, only its waistband and ties are visible; its body stays in front.
+Use only `assets/brand/manwill-hand-lettered-v2.svg`. Preserve its path and proportions. Earlier agent-designed marks under `assets/identity/` are superseded. The additional serif mark and coffee-lettering photograph were supplied inline without downloadable original files; neither has been redrawn.
 
-Latest user direction is more expressive and closer to the references: editorial flash photography, high-key exposure, selective motion or foreground blur, visible film grain and noise. These are now requested camera qualities. Vary them by composition; do not give every frame the same soft daylight treatment. Keep physical detail believable and faces hidden. Avoid repeating embossed/swirl texture, waxy skin, glossy product-render lighting and fake decorative distress. Check hands, garment construction, contact shadows, reflected objects and coffee equipment. Do not promise generated imagery is indistinguishable from photography.
+The artwork follows three research directions:
+
+1. Personal encounter: “Meet your brewer.” The shirt says “ASK ME ABOUT YOUR COFFEE.”
+2. Discovery through familiar preferences: “Tell us what you drink at home.”
+3. Visible making: “A front-row seat to your coffee.” / “WATCH YOUR COFFEE / BEING MADE.”
+
+Do not restore “Make yourself a regular”, “Coffee, by hand”, generic slowness/wellness copy, or invented claims about Manwill's staff or services. The proposal is high-level, positive and professional. These are directions to discuss with the team, not a commissioned rebrand or final tagline.
+
+## Photography and selections
+
+Faces stay hidden, including reflections. Use the supplied editorial references: flash, high-key exposure, selective blur, grain and natural imperfections. Inspect hands, glasses, coffee equipment, print and fabric. Avoid plastic skin, repeating swirl texture or implausible construction.
+
+The plain-card tray (`assets/visuals/discovery-tray.webp`) is the user-selected option 1 and remains unchanged. The shirt preserves the selected straight-on red-shirt photograph and large yellow lettering; the small line was changed to “ASK ME ABOUT YOUR COFFEE.” Its physical print is a generated mockup and is not vector-exact. Do not use the rejected angled shirt or earlier swirl-texture edits.
+
+Generated scenes are concept photography, not documentary pictures of Manwill's premises or team. The page says so once, and image alt text describes them as proposed work. Two verified public shop photographs ground the current-brand analysis: the owner’s daytime tree-front image from Google Maps, and a clear counter still from the café’s public Instagram reel. Credits and durable source links are on the research page. See real-shop-provenance.json.
 
 ## What the references establish
 
@@ -37,64 +51,21 @@ The references are images attached in the conversation. The IDs below are descri
 
 The latest four references reinforce the image/type relationship. Do not reduce them to a colour palette. Avoid generic coffee stock, spotless studio scenes, automatically adding film borders, identical centred headlines, arbitrary decorative marks, or one font treatment repeated across every image. Actual wording should sound like Raagul, not like a wellness campaign. None of the reference slogans is approved Manwill copy.
 
-## Keep the tasks separate
+## Files and build
 
-`visual-slots.json` assigns each frame and gives its individual brief:
+- `production/photos/`: source photographs for editable poster compositions; not deployed.
+- `production/hospitality-art/`: two independently authored people compositions.
+- `production/discovery-art/`: menu and discovery poster compositions.
+- `production/coffee-art/`: two independently authored brewing compositions.
+- `production/round-two/`: archived earlier serif layouts; not included in the active build.
+- `production/final-art/`: three additional sans-serif compositions.
+- `production/motion/build-review.py`: embeds these sources in the standalone artwork workbook `production/review.html`.
+- `scripts/export-artwork.cjs`: renders all nine artworks to full-size WebP files; set `PLAYWRIGHT_MODULE` and `CHROMIUM_PATH` if needed. Serve the rebuilt workbook over HTTP first and set `ARTWORK_URL` to its URL.
+- `assets/visuals/`: twelve optimized concept artworks and two authentic shop photographs. Whole posters retain their original ratios on desktop and mobile.
+- `production/visual-slots.json`: file, dimensions, alt text and authorization for every live frame.
+- `scripts/build-motion.py`, `hero-motion.css`, `hero-motion.js`: coffee-to-wordmark animation. Both final SVG layers preserve the supplied path; reduced-motion users get the still mark and manual controls.
+- `scripts/build.sh`: produces the public static website in `dist/`, including the separate review workbook.
 
-- Hospitality agent: `people-candid`, `people-brewer`, `people-social` only.
-- Print agent: `discovery-tray`, `discovery-menu` only.
-- Craft agent: `cover-coffee`, `craft-pour`, `craft-poster` only.
-- A separate poster agent, after approval: `handwritten-poster`, `landscape-poster`.
-- A separate comparison agent, after approval: the two positive reference directions (coffee knowledge and sense of place). These no longer represent directions to avoid.
-- Parent: the actual shopfront photos, approved asset insertion, testing and publishing.
+The main proposal is the finished client-facing page; the review workbook shows the current artwork and selected applications. Public site: https://raagulmanoharan.github.io/ManWill/ .
 
-No wordmark agent is needed. The supplied hand-lettered SVG is available; its faithful PNG render for image-generation reference is `/workspace/scratch/manwill-previews/identity/manwill-hand-lettered-v2.png`. Do not redraw the serif mark from memory. The current motion proof preserves the supplied SVG path exactly and uses the new macro coffee pilot as a temporary photo source.
-
-## How the page handles the images
-
-Twelve frames are on the main page, with two actual-photo frames in the research notes. These are large image spreads, not thumbnail galleries. Portraits, square images and landscape compositions keep their complete dimensions on desktop and mobile.
-
-Every frame has a stable `data-visual` ID. The build reads `production/visual-slots.json`. Once the user approves an asset, the parent sets its `src`, `approved: true`, actual `width`, actual `height` and a factual `alt` description. Save public image exports under `assets/visuals/`. Keep originals, working files, unapproved output and wordmark studies elsewhere.
-
-The build publishes only approved image paths listed in the manifest, removes their placeholder labels, and writes normal static `<img>` elements. There is no client-side image loader. A missing approved file stops the build. Pending files remain placeholders and are not copied to the public site.
-
-All artwork with lettering is shown in full at its intrinsic aspect ratio. Do not use `object-fit: cover` on a poster, tray card, menu or square social composition. Do not put more HTML text over a finished poster.
-
-The cover is the single exception: it is a photo without baked-in type, cropped responsively behind two small HTML text blocks. Keep the coffee action near the centre and darker areas behind those blocks. Review its 1440px and 390px crops after insertion. The HTML cover text should not be repeated inside the photo.
-
-Suggested delivery sizes are in the manifest, not mandatory source dimensions. Record the real dimensions. Return an optimized WebP or JPEG for photographs, PNG/WebP for graphic work where needed, and preserve the original separately. Avoid tiny text and keep lettering comfortably inside the edges. The parent should review readability on a phone before publishing.
-
-## Copy voice
-
-Latest user direction: professional, high-level and positive overall. Focus on what Manwill can build on. Keep detailed diagnostics, execution choices and questions out of the public page. The two comparison frames now explore a positive balance of coffee knowledge and sense of place, not mistakes to avoid. Offer broad proposals for how Manwill can improve its branding. Do not lead with “I visited your place, so I made this”, the cold outreach story, or a personal account of doing the research. Explain what the references suggest, what Manwill could do, and what needs to be understood with the team.
-
-Keep Raagul’s direct language and contractions. Name practical outcomes: helping a first-time visitor choose a coffee, giving the brewer a presence in the photography, or making the business recognisable online. Keep paragraphs short and avoid jargon. “A proposal for how Manwill could build a stronger identity around the way it makes and serves coffee” is the intended register.
-
-Avoid little slogan triplets, “the pour, the pause, the attention”, “distinctly yours”, “a look makes a promise”, “unmistakably”, “territories”, “expressive layers”, or claims of transformation. None of the reference slogans is approved Manwill copy. The user has authorized the current five-piece set, including proposed copy for review. Do not treat its copy as a final brand tagline.
-
-
-## Application revisions
-
-`review.html` is an explicit preview page for Raagul, with generated application previews and an interactive photo-to-wordmark transition. Tray option 1 (the plain card and coffee glass) is selected and approved for the main proposal. The selected previous T-shirt is also approved and inserted. Other slots remain placeholders pending review. The review page is public on the requested GitHub Pages host and is not linked from the client-facing proposal. It is not a private or secret page.
-
-Source: `production/motion/review-template.html`, `transition.js`, and `build-review.py`. The builder embeds assets into `production/review.html`, which is copied to `dist/review.html`. The standalone copy is `/workspace/scratch/manwill-previews/manwill-review.html`. This review-only export does not change the main-page approval requirement.
-
-The printed and embroidered marks in generated mockups closely follow the supplied reference but are not vector-exact. The review page states that limitation. Do not call them final production logo artwork. The animation uses the original vector path unchanged.
-
-The user explicitly selected tray option 1: plain card with coffee glass, source discovery-tray-pilot-v2.png. Preserve it unchanged and use it for the main discovery-tray slot. Keep the scalloped card as an unselected review alternative. The shirt copy must speak from Manwill, not from the wearer. “MANUAL COFFEE / PONDICHERRY” and “I’LL HAVE MY USUAL.” were rejected for the shirt. Do not reuse either in the shirt artwork. Category and location remain appropriate factual secondary information on the card.
-
-The latest shirt preview proposes “MAKE YOURSELF A REGULAR.” as an invitation from Manwill. It is a copy option for review, not an approved final tagline. Large yellow lettering and worn-in print were explicitly requested; the small-card direction does not apply to this shirt.
-
-The shirt selection is now fixed. Earlier print-realism feedback led to experiments, but the user restored the previous published image because the new wordmark looked modified. Do not continue those experiments.
-
-Do not use people-brewer-printed-preview.png or people-brewer-printed-v2-preview.png as source images: iterative edits introduced coarse artificial swirl texture into the cloth. They failed internal review. The fresh angled image people-brewer-fresh-printed-preview.png was rejected by the user for changing the wordmark. It is not a current candidate.
-
-## Current selection and next set
-
-The latest user instruction overrides the shirt realism experiments: restore `people-brewer-brand-preview.png` unchanged. The fresh angled image was rejected because the wordmark looked modified. Do not repair or regenerate the selected shirt. Tray option 1 remains selected. Both selected exports are copied byte-for-byte under `assets/visuals/`.
-
-The next five pieces are photo-led editorial compositions. Generate photographs without logos or lettering. Add the original supplied SVG directly as a deliberate graphic element in the HTML artwork; preserve its exact path and aspect ratio. This is poster typography, not a simulated print onto a shirt or paper. Typography uses Inter Tight and Instrument Serif, with distinct arrangements informed by the supplied references. This prevents further generator changes to the wordmark. New copy and compositions are for review.
-
-Five new pieces are available in the review page’s `#next-set` section. Source markup and scoped styles are in `production/round-two/`. Generated photo sources and full-size browser-rendered artwork exports are in `/workspace/scratch/manwill-previews/round-two/`; exports preserve the original supplied SVG shapes. These five images await selection for the main proposal. The menu-cover copy is generated as print on paper; its Manwill mark remains an exact SVG graphic outside the paper.
-
-Latest review direction for the five-piece set: typography should be expressive in scale, alignment and its relationship to the photograph, close to the provided Chez Willy, Lunet, April and Dream State examples. Avoid safe small captions parked in a corner for every frame. Keep the exact SVG mark, even when scale, colour or rigid rotation changes. Camera blur/grain is authored into the photographs via image generation, not added as a CSS overlay.
+Do not stage unrelated old assets. Do not send messages to the café. The reply control copies text for the existing conversation; it sends nothing.

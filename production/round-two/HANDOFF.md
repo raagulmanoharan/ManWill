@@ -1,3 +1,5 @@
+> Archived layout set. Superseded by the sans-serif modules in hospitality-art, discovery-art, coffee-art and final-art. This directory is not used by the current build. See ../VISUAL-HANDOFF.md.
+
 # Round two editorial compositions
 
 Insert `section.html` into the review page's `<main>` and append `styles.css` after the existing review CSS. Everything is scoped to `.round-two`; no scripts, controls, CSS blur, or CSS grain are added. The four spreads remain a 960px candid portrait, paired pour/counter portraits, a 1040px social square, and an 880px menu portrait. Pairs stack below 761px. Images retain their full native compositions with `width:100%; height:auto`.

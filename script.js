@@ -1,18 +1,25 @@
 (() => {
+  'use strict';
   const button = document.getElementById('reply-button');
-  if (!button) return;
+  const textarea = document.getElementById('reply-text');
+  const status = document.getElementById('reply-status');
+  const fallback = document.getElementById('reply-fallback');
+  if (!button || !textarea || !status || !fallback) return;
   button.addEventListener('click', async () => {
-    const textarea = document.getElementById('reply-text');
-    const status = document.getElementById('reply-status');
+    if (button.getAttribute('aria-busy') === 'true') return;
+    button.setAttribute('aria-busy', 'true');
     try {
       if (!navigator.clipboard?.writeText) throw new Error('Clipboard unavailable');
       await navigator.clipboard.writeText(textarea.value);
-      status.textContent = 'Copied. Paste it into the Instagram conversation.';
+      status.textContent = 'Reply copied. Paste it into our Instagram conversation.';
     } catch {
-      document.getElementById('reply-fallback').hidden = false;
+      fallback.hidden = false;
       textarea.focus();
       textarea.select();
-      status.textContent = 'Select and copy the message below, then paste it into the Instagram conversation.';
+      textarea.setSelectionRange(0, textarea.value.length);
+      status.textContent = 'Copy the selected message below, then paste it into our Instagram conversation.';
+    } finally {
+      button.removeAttribute('aria-busy');
     }
   });
 })();

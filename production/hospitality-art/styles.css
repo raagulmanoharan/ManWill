@@ -1,0 +1,158 @@
+@font-face {
+  font-family: ManwillHospitalityInterTight;
+  src: url('__FONT_DATA__') format('woff2');
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+}
+
+.hospitality-art {
+  --ha-cream: #f5edda;
+  --ha-red: #ed402b;
+  --ha-ink: #172d26;
+  --ha-sans: ManwillHospitalityInterTight, sans-serif;
+  width: calc(100% - 64px);
+  max-width: 1440px;
+  margin-inline: auto;
+  padding-block: 48px 72px;
+}
+
+.hospitality-art,
+.hospitality-art * {
+  box-sizing: border-box;
+}
+
+.hospitality-art .hospitality-art__spreads {
+  display: grid;
+  justify-items: center;
+  gap: 72px;
+  min-width: 0;
+}
+
+.hospitality-art .hospitality-art__canvas {
+  position: relative;
+  isolation: isolate;
+  container-type: inline-size;
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+  overflow: hidden;
+  border: 0;
+  border-radius: 0;
+  background: #19242c;
+  color: var(--ha-cream);
+  font-family: var(--ha-sans);
+  font-style: normal;
+  font-synthesis: none;
+}
+
+.hospitality-art .hospitality-art__canvas--candid {
+  max-width: 960px;
+  aspect-ratio: 1122 / 1402;
+}
+
+.hospitality-art .hospitality-art__canvas--social {
+  max-width: 1040px;
+  aspect-ratio: 1;
+}
+
+/* The full source photographs remain unchanged and uncropped. */
+.hospitality-art .hospitality-art__photo {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  object-fit: contain;
+}
+
+.hospitality-art .hospitality-art__canvas > p,
+.hospitality-art .hospitality-art__mark {
+  position: absolute;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.hospitality-art .hospitality-art__canvas > p {
+  font-family: var(--ha-sans);
+  font-style: normal;
+  font-synthesis: none;
+}
+
+.hospitality-art .hospitality-art__mark {
+  display: block;
+  height: auto;
+  aspect-ratio: 1444 / 476;
+  overflow: visible;
+  pointer-events: none;
+}
+
+/* One shared headline specification, inherited unchanged by every line. */
+.hospitality-art .hospitality-art__candid-copy,
+.hospitality-art .hospitality-art__social-copy {
+  font-size: 9cqw;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.035em;
+  white-space: nowrap;
+}
+
+/* Candid: two calm lines on the shirt; the coffee stays clear. */
+.hospitality-art .hospitality-art__candid-copy {
+  top: 18cqw;
+  left: 20cqw;
+  width: 74cqw;
+  color: var(--ha-cream);
+}
+
+.hospitality-art .hospitality-art__candid-copy > span {
+  display: block;
+}
+
+.hospitality-art .hospitality-art__candid-copy > span + span {
+  color: var(--ha-red);
+}
+
+.hospitality-art .hospitality-art__mark--candid {
+  right: 5.8cqw;
+  bottom: 6.4cqw;
+  width: 18.4cqw;
+  color: var(--ha-cream);
+}
+
+/* Social: one invitation, aligned naturally in the photographed wall area. */
+.hospitality-art .hospitality-art__social-copy {
+  top: 10cqw;
+  right: 4.5cqw;
+  width: 46.5cqw;
+  color: var(--ha-cream);
+  text-align: left;
+}
+
+.hospitality-art .hospitality-art__social-copy > span {
+  display: block;
+}
+
+.hospitality-art .hospitality-art__mark--social {
+  bottom: 5.5cqw;
+  left: 5.4cqw;
+  width: 18.5cqw;
+  color: var(--ha-ink);
+}
+
+@media (max-width: 700px) {
+  .hospitality-art {
+    width: calc(100% - 40px);
+    padding-block: 32px 48px;
+  }
+
+  .hospitality-art .hospitality-art__spreads {
+    gap: 32px;
+  }
+}
