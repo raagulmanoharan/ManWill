@@ -22,13 +22,13 @@
       "height": 1402,
       "src": "assets/visuals/people-candid.webp",
       "approved": true,
-      "alt": "Proposed Manwill campaign: a cropped seated person holding coffee, with red sans-serif Meet your brewer lettering and the Manwill wordmark.",
+      "alt": "Proposed Manwill campaign: a low-angle view of cropped guests around stools and a black-coffee handoff, with red sans-serif Meet your brewer lettering.",
       "owner": "hospitality_images",
       "references": [
         "A3",
         "B3"
       ],
-      "production_status": "editorial_revision_complete_for_review",
+      "production_status": "reference_revision_reviewed",
       "wordmark_application": "Original supplied SVG as an intentional editorial HTML layer. Photo generation must contain no lettering or logos."
     },
     {
@@ -51,14 +51,14 @@
       "height": 1254,
       "src": "assets/visuals/people-social.webp",
       "approved": true,
-      "alt": "Proposed Manwill campaign: people sharing coffee at a sunlit counter, faces out of view, with Ask me about your coffee in large sans-serif lettering.",
+      "alt": "Proposed editorial photograph of a coffee exchange at a bright counter, with window flare and cropped figures whose faces are out of view.",
       "owner": "hospitality_images",
       "references": [
         "A7",
         "B4"
       ],
-      "production_status": "editorial_revision_complete_for_review",
-      "wordmark_application": "Original supplied SVG as an intentional editorial HTML layer. Photo generation must contain no lettering or logos."
+      "production_status": "reference_revision_reviewed",
+      "wordmark_application": "Photo-only. No editorial lettering or logo overlay."
     },
     {
       "id": "discovery-tray",
@@ -80,13 +80,13 @@
       "height": 1448,
       "src": "assets/visuals/discovery-menu.webp",
       "approved": true,
-      "alt": "Proposed menu photograph: a cream booklet reading Tell us what you drink at home and We’ll help you choose beside a coffee glass, with the Manwill mark outside the paper.",
+      "alt": "Proposed menu photograph: a cream booklet printed with Tell us what you drink at home and We’ll help you choose beside a coffee glass.",
       "owner": "print_images",
       "references": [
         "A2"
       ],
-      "production_status": "editorial_revision_complete_for_review",
-      "wordmark_application": "Original supplied SVG as an intentional editorial HTML layer. Photo generation must contain no lettering or logos."
+      "production_status": "reference_revision_reviewed",
+      "wordmark_application": "Physical printed cover only; no floating logo overlay."
     },
     {
       "id": "handwritten-poster",
@@ -95,8 +95,8 @@
       "height": 1448,
       "src": "assets/visuals/handwritten-poster.webp",
       "approved": true,
-      "alt": "Proposed Manwill poster: Tell us what you drink at home in bold sans-serif on burgundy, with a small guest-side coffee photograph and the Manwill wordmark.",
-      "owner": "poster agent, to be assigned after approval",
+      "alt": "Proposed burgundy Manwill poster with broad cream sans-serif lettering around a small inset photograph of a hand holding coffee.",
+      "owner": "print_images",
       "references": [
         "A1"
       ]
@@ -108,12 +108,13 @@
       "height": 1402,
       "src": "assets/visuals/craft-pour.webp",
       "approved": true,
-      "alt": "Proposed Manwill coffee poster: a close pour-over photograph with bold red sans-serif lettering, A front-row seat to your coffee.",
+      "alt": "Proposed Manwill pour-over poster with one continuous red sans-serif headline across a close photograph of the brewing action.",
       "owner": "craft_images",
       "references": [
+        "B1",
         "B2"
       ],
-      "production_status": "editorial_revision_complete_for_review",
+      "production_status": "reference_revision_reviewed",
       "wordmark_application": "Original supplied SVG as an intentional editorial HTML layer. Photo generation must contain no lettering or logos."
     },
     {
@@ -123,12 +124,12 @@
       "height": 1402,
       "src": "assets/visuals/craft-poster.webp",
       "approved": true,
-      "alt": "Proposed Manwill counter poster with brewing equipment and green tiles, bold cream Watch your coffee being made lettering and the Manwill wordmark.",
+      "alt": "Proposed Manwill artwork: two cropped hands opening a paper filter on a pale steel worktop, with compact Watch your coffee being made lettering.",
       "owner": "craft_images",
       "references": [
-        "A6"
+        "B1"
       ],
-      "production_status": "editorial_revision_complete_for_review",
+      "production_status": "reference_revision_reviewed",
       "wordmark_application": "Original supplied SVG as an intentional editorial HTML layer. Photo generation must contain no lettering or logos."
     },
     {
@@ -138,8 +139,8 @@
       "height": 1024,
       "src": "assets/visuals/landscape-poster.webp",
       "approved": true,
-      "alt": "Proposed Manwill campaign with a rectangular photograph of a brewer serving a guest, bold Meet your brewer typography and the Manwill wordmark.",
-      "owner": "poster agent, to be assigned after approval",
+      "alt": "Proposed burgundy Manwill poster with a tall glazed-door opening showing a photograph of the actual shop doorway, alongside cream sans-serif lettering.",
+      "owner": "editorial_layouts",
       "references": [
         "A5"
       ]
@@ -151,8 +152,8 @@
       "height": 1402,
       "src": "assets/visuals/compare-technical.webp",
       "approved": true,
-      "alt": "Proposed coffee-led Manwill artwork: A front-row seat in bold sans-serif with a close view of manual brewing equipment.",
-      "owner": "comparison agent, to be assigned after approval",
+      "alt": "Proposed coffee-led Manwill artwork: a close view of brewing equipment against dark green tiles, with compact cream sans-serif lettering.",
+      "owner": "editorial_layouts",
       "references": []
     },
     {
@@ -162,8 +163,8 @@
       "height": 1402,
       "src": "assets/visuals/compare-lifestyle.webp",
       "approved": true,
-      "alt": "Proposed people-led Manwill artwork: a guest and brewer meeting over coffee, with bold sans-serif Meet your brewer typography.",
-      "owner": "comparison agent, to be assigned after approval",
+      "alt": "Proposed people-led Manwill photograph: a cropped close view of serving and receiving hands meeting around a glass of black coffee.",
+      "owner": "editorial_layouts",
       "references": []
     },
     {
@@ -203,7 +204,8 @@
   ],
   "coffee_lettering_reference": {
     "src": null,
-    "status": "visible_in_chat_original_file_needed"
+    "status": "visible_in_chat_original_file_needed",
+    "requirement": "Use the exact user-supplied coffee-written Manwill photograph, then dissolve to the unchanged supplied SVG. Generic coffee macros and generated recreations are not substitutes."
   },
   "photography_direction": "Latest user direction: distinctly editorial photography close to the supplied references, with direct flash, high-key highlights, selective motion/foreground blur, visible film grain and noise. Vary these camera qualities across images instead of applying one uniform look. Hide faces and preserve plausible anatomy, equipment and materials. Grain must not become embossed/repeating swirls or fake paper distress. Selected shirt and tray stay unchanged.",
   "authorization": "Latest explicit request: Go ahead and build out the website. Generate the image, build the full website. Review it and give me the link."

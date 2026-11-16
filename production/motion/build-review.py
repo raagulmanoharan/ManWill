@@ -2,6 +2,7 @@
 from pathlib import Path
 from base64 import b64encode
 import xml.etree.ElementTree as ET
+import re
 
 root = Path(__file__).resolve().parents[2]
 previews = root / 'production/photos'
@@ -25,14 +26,19 @@ values = {
     '__SOCIAL_DATA__': data(previews / 'people-social.webp', 'image/webp'),
     '__POUR_DATA__': data(previews / 'craft-pour.webp', 'image/webp'),
     '__COUNTER_DATA__': data(previews / 'craft-poster.webp', 'image/webp'),
+    '__PREPARATION_DATA__': data(previews / 'craft-preparation.webp', 'image/webp'),
     '__MENU_DATA__': data(previews / 'discovery-menu.webp', 'image/webp'),
     '__DISCOVERY_DETAIL_DATA__': data(previews / 'discovery-detail.webp', 'image/webp'),
     '__ENCOUNTER_DATA__': data(previews / 'counter-encounter.webp', 'image/webp'),
+    '__APERTURE_DATA__': data(previews / 'manwill-doorway.jpg', 'image/jpeg'),
     '__MARK_PATH__': path,
     '__MOTION_SCRIPT__': (root / 'production/motion/transition.js').read_text(),
 }
 for key, value in values.items():
     template = template.replace(key, value)
+unresolved = set(re.findall(r'__[A-Z_]+__', template))
+if unresolved:
+    raise ValueError(f'Unresolved artwork inputs: {sorted(unresolved)}')
 output = root / 'production/review.html'
 output.write_text(template)
 

@@ -33,13 +33,14 @@ fs.mkdirSync(out, {recursive:true});
       await frame.setContent(`<!doctype html><html lang="en"><head>${head}<style>html,body{margin:0;padding:0}.round-two,.final-art,.hospitality-art,.discovery-art,.coffee-art{width:100%;max-width:none;margin:0;padding:0}figure{width:100%!important;max-width:none!important}</style></head><body><div class="${art.wrapper}">${art.html}</div></body></html>`);
       await frame.evaluate(() => document.fonts.ready);
       await frame.locator('img').evaluate(el => el.decode());
-      assert.equal(await frame.locator('svg path').getAttribute('d'), source, art.id+' changed supplied path');
+      const marks = await frame.locator('svg path').evaluateAll(paths => paths.map(p => p.getAttribute('d')));
+      for (const mark of marks) assert.equal(mark, source, art.id+' changed supplied path');
       const png = path.join(out,art.id+'.png');
       await frame.locator('figure').screenshot({path:png});
       const actual = execFileSync('magick',['identify','-format','%w %h',png], {encoding:'utf8'}).trim();
       assert.equal(actual, `${art.width} ${art.height}`, art.id + ' export dimensions');
       execFileSync('magick',[png,'-quality','92',path.join(root,'assets/visuals',art.id+'.webp')]);
-      console.log(`${art.id}: ${art.width} × ${art.height}, exact SVG, complete artwork`);
+      console.log(`${art.id}: ${art.width} × ${art.height}, ${marks.length ? 'exact SVG' : 'photo-only'}, complete artwork`);
       await frame.close();
     }
   } finally { await browser.close(); }

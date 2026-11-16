@@ -1,57 +1,52 @@
-# People compositions — sans-only production handoff
+# People artwork — selective reference-led revision
 
-Integrate `section.html` and `styles.css` together. The two figures retain `data-round-visual="people-candid"` and `data-round-visual="people-social"`. All styles are scoped under `.hospitality-art`, with a unique font-family name to avoid collisions. Retain that wrapper when extracting either figure.
+Integrate the current `section.html` and `styles.css` together. Retain the `.hospitality-art` wrapper and existing `data-round-visual` IDs. Root owns website integration and final exports; no shared build, manifest, website, production review or export files were changed here.
 
-## Current typography specification
+## people-candid: new photograph and lower diagonal copy
 
-Every headline word and line uses **Inter Tight, 9cqw, weight 600, line-height 1, letter-spacing −.035em, normal style**. Child spans inherit these values without font-size or weight overrides. There is no serif, italic treatment, or separate small copy block. Layout differences come from alignment, line breaks and colour only, following the latest shared campaign specification.
+The exact recovered Chez Willy reference was inspected visually at `/workspace/scratch/manwill-reference-recovery/chez-willy-exact.jpg` and supplied through `referenced_image_paths` in the image-generation call. Its tight limb/stool crop, suspended drink, flash, grain and cool ambient shadows informed a new original scene. Its lettering, logo, beer and shoe branding were not reproduced.
 
-- **Candid:** “Meet your / brewer.” in two equal-sized lines on the navy shirt area. Cream and red connect the invitation to the existing palette. The coffee, hands and complete seated photograph remain visible.
-- **Social:** “Ask me / about your / coffee.” in three equal-sized, left-aligned lines on the green wall. The redundant “Meet your brewer” intro was removed. The stable and moving coffee gestures stay clear.
+The new photograph shows a small black coffee being handed to a seated guest. A navy-shorts knee fills the near foreground; the receiving hand, brewer's hand, worn wooden stool, rust trousers and grey tiled floor provide the composition. There is no broad shirt or green-counter tableau. Heads and faces are entirely outside the frame. The coffee tumbler and two hand anatomies were inspected at native resolution; no material extra-digit, grip or glass defect was found. The crop is closer and the gesture more active than the preceding portrait. Flash and fine grain remain part of the photograph, with no generated text or logo.
 
-The supplied organic mark remains quiet: 18.4% of canvas width on candid and 18.5% on social. Its path, viewBox and fill rule are preserved; it is not a generated or retyped logo. Both are editorial graphic overlays, not claims of physical shirt printing. The separately selected physical-shirt photograph was not edited in this task.
+- **Active source:** `production/photos/people-candid.webp`
+- **Native size:** **1122 × 1402** — unchanged from the preceding source.
+- **WebP size:** **233,814 bytes**, quality 88, no post-generation crop or retouching.
+- **Generated PNG retained:** `/workspace/generated_images/exec-96db9c8c-9b5e-4bb4-a911-06304c43cb8d.png`
+- **Previous source preserved:** `/workspace/scratch/manwill-previews/round-two/people-candid-editorial-fresh.webp`. Its SHA-256 matched the old active source before replacement.
+- **Generation count:** one new photograph, no retry or additional image.
 
-## Tokens and sources
+The existing copy is now one red line, **“Meet your brewer.”**, crossing the lower lap/stool/floor diagonal at −8 degrees. It remains clear of the hands and glass and is not positioned on a shirt. It uses the shared sans specification unchanged: **Inter Tight 9cqw / 600 / line-height 1 / letter-spacing −.035em / normal style**. The sentence has no mixed word sizes or weights. The exact supplied SVG is a quiet 18%-width cream mark at the upper edge; its path, viewBox and fill rule are preserved.
+
+## people-social: photo only
+
+The existing `production/photos/people-social.webp` is preserved byte-for-byte. The headline and SVG overlay have both been removed from this figure. Keep it photo-only when integrating or exporting: the bright window exposure, grain and moving coffee gesture now provide a visual pause beside the more graphic candid composition.
+
+- **Native size:** **1254 × 1254** — unchanged.
+- **DOM overlays:** zero text blocks and zero SVG marks.
+- **Photo:** no crop, filter, transform, retouching or regeneration.
+
+## Tokens and full ratios
 
 | Token | Replacement |
 | --- | --- |
-| `__CANDID_DATA__` | Full data URL for `production/photos/people-candid.webp` |
-| `__SOCIAL_DATA__` | Full data URL for `production/photos/people-social.webp` |
-| `__MARK_PATH__` | Exact, unchanged `d` from `assets/brand/manwill-hand-lettered-v2.svg` |
-| `__FONT_DATA__` | Full data URL for the corrected variable Inter Tight WOFF2 |
+| `__CANDID_DATA__` | Full data URL for the new `production/photos/people-candid.webp` |
+| `__SOCIAL_DATA__` | Full data URL for the unchanged `production/photos/people-social.webp` |
+| `__MARK_PATH__` | Exact `d` from `assets/brand/manwill-hand-lettered-v2.svg`; candid only |
+| `__FONT_DATA__` | Full data URL for the corrected variable `assets/inter-tight-latin.woff2` |
 
-The font-face declares the real 400–700 range. Initial QA used `/workspace/scratch/inter-tight-variable.woff2`, the corrected variable file supplied by the parent. The repository's `assets/inter-tight-latin.woff2` now has the identical SHA-256 hash, so the reusable helper uses that corrected repository asset. Do not restore the earlier static regular font.
+Each figure remains an inline-size container. Native aspect ratios and `object-fit: contain` preserve the complete photographs at every width. Styles are isolated under `.hospitality-art`; no new font, logo or copy has been introduced. The physical large-yellow-wordmark shirt and plain tray were not edited.
 
-## Full canvas sizes
+## Checks for this revision
 
-| ID | Export size | Ratio |
-| --- | --- | --- |
-| `people-candid` | 1122 × 1402 | Native portrait ratio |
-| `people-social` | 1254 × 1254 | 1:1 |
+An isolated in-memory Chromium render was checked at both native dimensions and at 390 px artwork width, without invoking or editing the shared review/export pipeline. Checks passed for full ratio, no text overflow, uniform 9cqw headline metrics, exact candid SVG path, no CSS photo filters/crops, no browser page errors, and zero social overlays. The transformed candid text stays below 59% of frame height; the handoff remains unobscured above it. Source hashing confirms the social photo is unchanged.
 
-Each figure is its own inline-size container, so the `cqw` typography scales with the artwork rather than the browser viewport. CSS aspect ratios match the complete source images. Photos use `object-fit: contain` with no filters, transforms, retouching, regenerated detail or cropping. Original flash, highlights, motion softness and grain remain unchanged.
+Current QA artifacts are outside production exports:
 
-For native exports, render the figure at the table width and set its `max-width: none`; keep its full computed height. The helper below does this without changing the production CSS. Do not export a screenshot of a cropped viewport.
+- `/workspace/scratch/manwill-previews/hospitality/people-candid-chez-check-1122.png`
+- `/workspace/scratch/manwill-previews/hospitality/people-candid-chez-check-390.png`
+- `/workspace/scratch/manwill-previews/hospitality/people-social-chez-check-1254.png`
+- `/workspace/scratch/manwill-previews/hospitality/people-social-chez-check-390.png`
+- `/workspace/scratch/manwill-previews/hospitality/candid-handoff-native-check.png`
+- `/workspace/scratch/manwill-previews/hospitality/chez-layout-check.json`
 
-## Independent verification
-
-Run `node production/hospitality-art/verify.mjs` in the workspace. It substitutes the four tokens locally and uses Chromium. The helper and its outputs are confined to this directory.
-
-Checked at native export dimensions and at **390 px artwork width**:
-
-- Correct complete aspect ratios and no headline overflow.
-- Every headline line has the same 9cqw size, 600 weight, 1 line-height and −.035em tracking; computed style is normal.
-- Corrected variable Inter Tight loads; no serif or italic font is requested.
-- Exact supplied SVG path is preserved in each rendered figure.
-- Source photos retain their native dimensions, `contain` fit and `filter: none`.
-- No browser page errors.
-- Full-size and phone-size screenshots visually reviewed; hands and coffee remain unobscured, and both marks remain readable.
-
-Artifacts:
-
-- `checks/people-candid-1122.png` and `checks/people-social-1254.png` — native composition renders.
-- `checks/people-candid-390.png` and `checks/people-social-390.png` — phone-width checks.
-- `checks/preview.html` — self-contained local preview.
-- `checks/layout-report.json` — machine-readable results.
-
-Only files within `production/hospitality-art/` were created or edited. No site, existing artwork directory, source photograph, final shirt, manifest, commit or publication changes were made. Root owns integration and the final set of nine exports.
+The older `checks/` captures and `verify.mjs` describe the preceding two-overlaid-image version; that helper assumes a mark on every figure and is not the current acceptance check. They were not modified in this narrowly scoped revision. Use the current QA artifacts above and root's final export checks.

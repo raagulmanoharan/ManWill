@@ -4,7 +4,7 @@ The user has authorized the full website, remaining image generation, review and
 
 ## Latest design direction
 
-The user's latest steering overrides the serif treatments described in earlier reference notes. Use sans-serif throughout the website and all authored image text. Active artwork uses Inter Tight variable, with every headline line at 9cqw, weight600, line-height1 and tracking−.035em. Do not enlarge individual words. Website headings also share one size at each breakpoint. The supplied organic wordmark remains original artwork; existing signage in real shop photographs remains unaltered.
+The user's latest steering overrides the serif treatments described in earlier reference notes. Use sans-serif throughout the website and all authored image text. Active artwork uses Inter Tight variable. Every word and line within a headline shares its size and weight; composition-specific scale varies across quiet photographic work and graphic posters. Do not enlarge individual words. Website headings also share one size at each breakpoint. The supplied organic wordmark remains original artwork; existing signage in real shop photographs remains unaltered.
 
 The page must explain why the proposed direction follows the research: lead with the brewer–guest relationship; make discovery approachable through familiar preferences; use visible making to express the care in the experience. Explain the wordmark, colour, type and photography choices briefly, next to the work. Show Raagul’s analysis and offer, not an unexplained gallery.
 
@@ -30,7 +30,7 @@ Generated scenes are concept photography, not documentary pictures of Manwill's 
 
 ## What the references establish
 
-The references are images attached in the conversation. The IDs below are descriptions for handoff, not downloaded file paths. Pass each agent only its relevant images and brief. If an agent cannot access the image, the parent should supply that specific reference rather than pretending a file exists. Do not paste the whole research history into each agent.
+The references are images attached in the conversation. The IDs below are descriptions for handoff. Exact BARI and Chez Willy files have since been recovered; see REFERENCE-DIRECTION.md for paths, provenance and the current allocation. Pass each agent only its relevant images and brief. If an agent cannot access the image, the parent should supply that specific reference rather than pretending a file exists. Do not paste the whole research history into each agent.
 
 | ID | User reference | What matters |
 | --- | --- | --- |
@@ -44,7 +44,7 @@ The references are images attached in the conversation. The IDs below are descri
 | A8 | Rear view of a red-shirted brewer tying a green apron | Face hidden; hands behind the lower back, natural workwear and a caught moment; square. Latest direction: large yellow supplied wordmark with subtle wear and a small brand-voice line below. |
 | A9 | Actual Manwill storefront at night | Existing place and sign. Reference for truth to the site, not a generated image. |
 | A10 | Actual daytime Manwill sign behind the large tree | Existing colours, compact premises and neighbourhood context. Use the actual photograph. |
-| B1 | Coffee dropping into a glass server, “Small actions, big impact” in white | The photograph carries the composition. Two compact blocks of tightly set neutral sans-serif sit in the image. Warm close detail, dark reflections, short lines; portrait 4:5 reference, adapted to a photo-only web cover. |
+| B1 | Coffee dropping into a glass server, “Small actions, big impact” in white | The photograph carries the composition. Two compact blocks of tightly set neutral sans-serif sit in the image. Warm close detail, dark reflections, short lines; portrait 4:5 reference. The current hero correction requires the user’s exact coffee-written wordmark photograph instead of this macro. |
 | B2 | Lunet pour-over, red “Small Cup. Big Shift.” | Editorial high-contrast serif, deliberate regular/italic contrast, warm blur and a close brewing crop. Type is part of the photograph; portrait 4:5. |
 | B3 | Grainy “April dump” image, cropped seated person, lime type | Casual analog character, compact sans with an expressive italic gesture. No need to copy checkerboards, stars or the camera-stock credit; portrait 3:4. |
 | B4 | Dream State pistachio post: red bold sans, script “No.” over a candid photo | Dense, tightly set grotesk and a single expressive script gesture, with the person still visible. Do not copy the health claim, social icons or handle; portrait 4:5. |
@@ -66,6 +66,10 @@ The latest four references reinforce the image/type relationship. Do not reduce 
 - `scripts/build-motion.py`, `hero-motion.css`, `hero-motion.js`: coffee-to-wordmark animation. Both final SVG layers preserve the supplied path; reduced-motion users get the still mark and manual controls.
 - `scripts/build.sh`: produces the public static website in `dist/`, including the separate review workbook.
 
-The main proposal is the finished client-facing page; the review workbook shows the current artwork and selected applications. Public site: https://raagulmanoharan.github.io/ManWill/ .
+The main proposal is the client-facing page; the review workbook shows the current artwork and selected applications. Public site: https://raagulmanoharan.github.io/ManWill/ .
 
 Do not stage unrelated old assets. Do not send messages to the café. The reply control copies text for the existing conversation; it sends nothing.
+
+## Hero correction still pending
+
+The old macro-to-wordmark transition is not the requested coffee-written photograph transition. The exact image file is missing and has been requested. Do not recreate it or claim the current hero fulfils that request. See motion/COFFEE-LETTERING-HANDOFF.md.

@@ -9,6 +9,7 @@
 .coffee-art {
   --coffee-art-red: #e43b27;
   --coffee-art-cream: #f0e9d5;
+  --coffee-art-ink: #223228;
   width: 100%;
   min-width: 0;
   font-family: ManwillCoffeeInterTight, Arial, sans-serif;
@@ -61,7 +62,6 @@
   margin: 0;
   padding: 0;
   font-family: ManwillCoffeeInterTight, Arial, sans-serif;
-  font-size: 9cqw;
   font-weight: 600;
   line-height: 1;
   letter-spacing: -0.035em;
@@ -85,29 +85,38 @@
 }
 
 .coffee-art .coffee-art__pour-copy {
-  top: 5%;
+  top: 38%;
   left: 6%;
   color: var(--coffee-art-red);
+  font-size: 6.3cqw;
 }
 
 .coffee-art .coffee-art__mark--pour {
   bottom: 5.3%;
   left: 6%;
-  width: 21%;
+  width: 16%;
   color: var(--coffee-art-red);
 }
 
-.coffee-art .coffee-art__mark--counter {
-  top: 6%;
-  right: 6%;
-  width: 19%;
-  color: var(--coffee-art-cream);
+.coffee-art .coffee-art__mark--preparation {
+  top: 22.5%;
+  left: 7%;
+  width: 18%;
+  color: var(--coffee-art-ink);
 }
 
-.coffee-art .coffee-art__counter-copy {
-  top: 17%;
-  left: 6%;
-  color: var(--coffee-art-cream);
+.coffee-art .coffee-art__preparation-copy {
+  top: 9%;
+  color: var(--coffee-art-ink);
+  font-size: 4.4cqw;
+}
+
+.coffee-art .coffee-art__preparation-copy--left {
+  left: 7%;
+}
+
+.coffee-art .coffee-art__preparation-copy--right {
+  left: 66%;
 }
 
 @media (max-width: 760px) {

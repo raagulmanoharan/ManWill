@@ -63,7 +63,7 @@
   object-fit: contain;
 }
 
-/* The original SVG is an editorial layer, separate from the printed cover. */
+/* The poster uses the original supplied SVG without path deformation. */
 .discovery-art__mark {
   position: absolute;
   z-index: 3;
@@ -75,23 +75,16 @@
   pointer-events: none;
 }
 
-.discovery-art__menu-mark {
-  top: 6.2%;
-  left: 6%;
-  width: 23%;
-}
-
 .discovery-art__poster-copy {
   position: absolute;
   z-index: 2;
-  top: 5.5%;
-  left: 6%;
+  inset: 0;
   margin: 0;
   padding: 0;
   color: var(--da-cream);
   font-family: var(--da-sans);
   font-style: normal;
-  font-size: 9cqw;
+  font-size: 20cqw;
   font-weight: 600;
   line-height: 1;
   letter-spacing: -0.035em;
@@ -99,16 +92,38 @@
 }
 
 .discovery-art__poster-copy > span {
+  position: absolute;
   display: block;
   white-space: nowrap;
+}
+
+.discovery-art__tell {
+  top: 4.5%;
+  left: 6%;
+}
+
+.discovery-art__what {
+  top: 23%;
+  left: 11%;
+}
+
+/* The last letters cross only the dark upper-left edge of the photo. */
+.discovery-art__drink {
+  top: 43%;
+  left: 6%;
+}
+
+.discovery-art__home {
+  top: 80.5%;
+  left: 6%;
 }
 
 .discovery-art__poster-photo {
   position: absolute;
   z-index: 1;
-  top: 34%;
-  right: 5.6%;
-  width: 59%;
+  top: 49%;
+  left: 38%;
+  width: 28%;
   aspect-ratio: 1086 / 1448;
   overflow: hidden;
   border: 0;
@@ -127,10 +142,10 @@
 }
 
 .discovery-art__poster-mark {
-  top: 78%;
-  left: 6%;
-  width: 23%;
-  color: var(--da-butter);
+  top: 65%;
+  left: 73%;
+  width: 18%;
+  color: var(--da-cream);
 }
 
 .discovery-art__note {

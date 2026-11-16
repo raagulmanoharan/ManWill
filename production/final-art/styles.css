@@ -9,6 +9,7 @@
 .final-art {
   --fa-paper: #f1efe7;
   --fa-ink: #192321;
+  --fa-burgundy: #481a2c;
   --fa-sans: ManwillFinalSans, Arial, sans-serif;
   width: calc(100% - 64px);
   max-width: 1440px;
@@ -69,6 +70,8 @@
 
 .final-art .final-art__canvas--encounter {
   aspect-ratio: 1536 / 1024;
+  background: var(--fa-burgundy);
+  color: var(--fa-paper);
 }
 
 .final-art .final-art__canvas--technical,
@@ -113,80 +116,89 @@
   border-radius: 0;
 }
 
-/* One identical headline treatment across every complete artwork. */
+/* Every word within each artwork inherits one size, weight and line height. */
 .final-art .final-art__encounter-line,
-.final-art .final-art__technical-line,
-.final-art .final-art__lifestyle-line {
-  font: 600 9cqw/1 var(--fa-sans);
+.final-art .final-art__technical-line {
+  font-family: var(--fa-sans);
+  font-weight: 500;
   font-style: normal;
   letter-spacing: -0.035em;
 }
 
 .final-art .final-art__encounter-line span,
-.final-art .final-art__technical-line span,
-.final-art .final-art__lifestyle-line span {
+.final-art .final-art__technical-line span {
   display: block;
 }
 
-/* Landscape: an open type field above a wide, close crop of the exchange. */
+/* A centred opening borrows the shallow arched top of Manwill's door glazing.
+   Source crop: approximately x10–57.5%, y38–80%; the person at right is excluded. */
 .final-art .final-art__encounter-photo {
-  inset: 39% 0 0;
+  top: 27%;
+  left: 36%;
+  width: 28%;
+  height: 66%;
+  border-radius: 48% 48% 0 0 / 4% 4% 0 0;
 }
 
 .final-art .final-art__encounter-photo img {
-  object-position: 50% 78%;
+  position: absolute;
+  top: -90.48%;
+  left: -21.05%;
+  width: 210.53%;
+  height: auto;
 }
 
 .final-art .final-art__encounter-line {
-  top: 5%;
-  left: 5%;
+  top: 8.3%;
+  left: 6%;
+  width: 88%;
+  font-size: 7.8cqw;
+  font-weight: 600;
+  line-height: 0.95;
+  text-align: center;
 }
 
 .final-art .final-art__encounter-mark {
-  top: 7%;
-  right: 5%;
-  width: 18%;
+  bottom: 7%;
+  left: 7%;
+  width: 14%;
 }
 
-/* Coffee: the title sits in the photograph; only the mark occupies the foot. */
+/* The complete counter photograph stays intact; two quiet cream blocks above it. */
 .final-art .final-art__technical-photo {
-  inset: 0 0 10%;
+  inset: 0;
 }
 
 .final-art .final-art__technical-photo img {
-  object-position: 50% 100%;
+  object-fit: contain;
 }
 
 .final-art .final-art__technical-line {
-  top: 5%;
-  left: 5%;
+  top: 10%;
+  left: 8%;
+  font-size: 4.4cqw;
+  line-height: 1.06;
   color: var(--fa-paper);
 }
 
 .final-art .final-art__technical-mark {
-  bottom: 2%;
-  left: 5%;
-  width: 20%;
+  top: 10%;
+  right: 8%;
+  width: 19%;
+  color: var(--fa-paper);
 }
 
-/* Hospitality: the same measured title above a broad photographic exchange. */
+/* A photographic pause: glass and both hands, without a title, logo or band. */
 .final-art .final-art__lifestyle-photo {
-  inset: 25% 0 10%;
+  inset: 0;
 }
 
 .final-art .final-art__lifestyle-photo img {
-  object-position: 52% 50%;
-}
-
-.final-art .final-art__lifestyle-line {
-  top: 4.5%;
-  left: 5%;
-}
-
-.final-art .final-art__lifestyle-mark {
-  bottom: 2%;
-  right: 5%;
-  width: 20%;
+  position: absolute;
+  bottom: 0;
+  left: -77%;
+  width: auto;
+  height: 126%;
 }
 
 .final-art .final-art__note {
