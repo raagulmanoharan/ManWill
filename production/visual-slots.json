@@ -1,6 +1,6 @@
 {
   "wordmark_source": "Use only supplied files. Hand-lettered SVG received at assets/brand/manwill-hand-lettered-v2.svg. Chunky serif wordmark is visible inline; original file still needed. All former agent wordmark studies are superseded.",
-  "generation_status": "Three pilots generated after the user asked to resume. Await review before producing the remaining set. Preview-only images are on review.html; no main-page visual has been approved.",
+  "generation_status": "Revised application previews: tray v2 retained with a new scalloped-card variant; shirt has a large yellow worn print and a proposed brand-voice line. Await review before producing the remaining set. Main proposal slots remain pending.",
   "slots": [
     {
       "id": "cover-coffee",
@@ -35,7 +35,7 @@
         "A3",
         "B3"
       ],
-      "brief": "Candid moment around the coffee counter, relaxed posture and a close human crop. Flash or available-light character, believable grain. Space for the supplied wordmark or separately approved lettering as part of the finished composition. Preserve the full portrait."
+      "brief": "A moment around the coffee counter with relaxed posture and a close crop. Hide faces completely; show hands, backs or a crop below the head. Available light or modest flash fill, restrained colour and natural detail. Any physical Manwill mark stays small. Preserve the full portrait."
     },
     {
       "id": "people-brewer",
@@ -47,15 +47,17 @@
       "alt": "",
       "owner": "hospitality_images",
       "references": [
-        "A4",
         "A8"
       ],
-      "brief": "The person making the coffee: an unposed portrait or a moment tying an apron. Typography can sit with the person, as in the chef reference. Choose one treatment for review. Do not imply generated people are the actual Manwill staff.",
+      "brief": "Rear view of a brewer in a faded red T-shirt tying narrow green apron strings behind the lower back. Head and face out of frame. Apron body remains in front; no broad rear panel. Large warm-yellow supplied wordmark across the back with lightly worn ink and a small brand-voice line beneath. No location/category descriptor or customer-voice line on the shirt. Natural light, believable hands and clothing. Do not imply the generated person is actual Manwill staff.",
       "review": {
-        "file": "/workspace/scratch/manwill-previews/hospitality/people-brewer-pilot-v1.png",
+        "file": "/workspace/scratch/manwill-previews/hospitality/people-brewer-brand-preview.png",
         "width": 1122,
         "height": 1402,
-        "status": "awaiting_user_review"
+        "status": "awaiting_user_review",
+        "revision": "Face hidden, rear view, plausible apron ties, large yellow supplied mark with lightly worn ink.",
+        "supporting_copy": "MAKE YOURSELF A REGULAR.",
+        "copy_status": "proposed_for_review"
       }
     },
     {
@@ -71,7 +73,7 @@
         "A7",
         "B4"
       ],
-      "brief": "A square image and type composition. Candid photograph, close crop, compact bold sans with one deliberate expressive serif/script gesture if approved. Lettering interacts with the photograph. No social-app icons, copied slogan or third-party handles."
+      "brief": "A square image and type composition. Candid photograph with face hidden, close crop, compact bold sans with one deliberate expressive serif/script gesture if approved. Lettering interacts with the photograph. Physical branding is discreet; poster typography may be large. No social-app icons, copied slogan or third-party handles."
     },
     {
       "id": "discovery-tray",
@@ -85,12 +87,20 @@
       "references": [
         "A2"
       ],
-      "brief": "Original Manwill printed card on a reflective steel tray, with cloth and physical paper detail. Use only the supplied wordmark. Show the complete card and leave its type legible. Do not copy the BARI lettering.",
+      "brief": "Small off-white rectangular card on an everyday steel tray with rust/brown cloth and a coffee glass. Card about a third of the image width; quiet supplied mark about a third of the card. Diffuse window light, subtle paper and metal detail, casual editorial arrangement. Show the whole card. No exaggerated distressing or large ornamental scallops.",
       "review": {
-        "file": "/workspace/scratch/manwill-previews/print/discovery-tray-pilot-v1.png",
+        "file": "/workspace/scratch/manwill-previews/print/discovery-tray-pilot-v2.png",
         "width": 1086,
         "height": 1448,
-        "status": "awaiting_user_review"
+        "status": "user_liked_retained_for_comparison",
+        "revision": "Smaller card and wordmark, plain stock, softer light, more surrounding cloth.",
+        "variant": {
+          "file": "/workspace/scratch/manwill-previews/print/discovery-tray-pilot-variant.png",
+          "width": 1086,
+          "height": 1448,
+          "status": "awaiting_user_review",
+          "direction": "Top-down full vertical steel tray, small scalloped cream card, quiet dark mark and factual secondary type. Closer to A2."
+        }
       }
     },
     {
@@ -105,7 +115,7 @@
       "references": [
         "A2"
       ],
-      "brief": "A related menu and cup application in use, with the supplied wordmark. Continue the material world of the tray photograph. No invented prices, origin claims or unconfirmed menu items."
+      "brief": "A related menu and cup application in use, with the supplied wordmark. Continue the material world of the tray photograph. No invented prices, origin claims or unconfirmed menu items. Keep the physical mark small and light natural. Follow the revised tray direction; avoid a glossy product mockup."
     },
     {
       "id": "handwritten-poster",
@@ -231,5 +241,6 @@
   "coffee_lettering_reference": {
     "src": null,
     "status": "visible_in_chat_original_file_needed"
-  }
+  },
+  "photography_direction": "Hide faces, including reflections. Use natural light, casual editorial framing and plausible small imperfections. Check anatomy, garment construction, reflections and contact shadows. No exaggerated wear, glossy CGI finish or artificial grain. Keep card branding discreet. T-shirt exception: a large warm-yellow supplied wordmark with lightly worn ink and a small brand-voice line. Poster headline typography may remain large."
 }

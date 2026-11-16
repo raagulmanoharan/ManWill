@@ -1,10 +1,18 @@
 # Read this before resuming image work
 
-Raagul has supplied the hand-lettered SVG at `assets/brand/manwill-hand-lettered-v2.svg` and asked the agents to resume. Three first-round pilots are complete and awaiting review. The chunky serif wordmark and coffee-lettering image are visible inline in chat but their original files are still needed. Use supplied files only. The old studies under `assets/identity/`, including the misleadingly named `manwill-primary`, must not be used. They were superseded by the user.
+Raagul has supplied the hand-lettered SVG at `assets/brand/manwill-hand-lettered-v2.svg` and asked the agents to resume. Three first-round pilots are complete. The tray and brewer previews have been revised following his feedback on logo scale and photographic realism; the full set still awaits approval. The chunky serif wordmark and coffee-lettering image are visible inline in chat but their original files are still needed. Use supplied files only. The old studies under `assets/identity/`, including the misleadingly named `manwill-primary`, must not be used. They were superseded by the user.
 
-Get agreement on one specific pilot before generating it. Show that pilot and get approval before the full set. This document and the empty frames do not authorize generation. Do not infer approval from elapsed time or from a request to change the website.
+The user has authorized revisions of the current application previews. Correct defects within those revisions without asking again. Show the revised pilots and get approval before producing the full set. This document and the empty frames do not authorize further image production. Do not infer approval from elapsed time or from a request to change the website.
 
 The website is a personal proposal to the café, not its finished customer-facing website. The images should demonstrate the work Raagul could do. Generated staff or interiors must be described as proposed images, not documentary photographs. Once a generated image is approved for use, include that distinction naturally in its alt text or an accompanying note.
+
+## Latest photography direction
+
+Keep the tray and card branding discreet. The user liked the smaller card preview and requested a second variant closer to A2. The T-shirt has a specific exception: a large warm-yellow supplied wordmark across the back, with lightly worn ink and a small supporting line in the brand’s own voice. Leave room for the person and setting. Poster headlines may also use the large scale shown in the references.
+
+Hide faces throughout the proposed people photography. Prefer a rear view, a crop below the head, or hands at work. Check mirrors and reflections too. A8 is now the framing reference for the brewer; A4 does not authorize a frontal face. Never distort garments or poses just to make a logo visible. From behind a normal apron, only its waistband and ties are visible; its body stays in front.
+
+Aim for an editorial photograph made in an ordinary working café: available light, restrained colour, a casual crop and some unevenness. Cloth can crease, steel can reflect imperfectly and paper can curl slightly. These details should make physical sense. Avoid spotless product renders, exaggerated wear, added grain as camouflage, golden glow, waxy skin, excessive background blur and symmetrical display arrangements. Check hands, garment construction, contact shadows, reflected objects and coffee equipment before handing off a candidate. Do not promise that generated imagery is indistinguishable from photography.
 
 ## What the references establish
 
@@ -15,11 +23,11 @@ The references are images attached in the conversation. The IDs below are descri
 | A1 | Burgundy poster, huge pale handwriting, small building photo in the centre | Expressive lettering and a deliberate difference in scale between type and image; portrait 3:4. |
 | A2 | BARI card on a polished steel tray and rust-coloured cloth | Printed material that feels physical; sculptural type and tactile paper; portrait 3:4. |
 | A3 | Chez Willy red lettering over people sitting with a drink | Unposed human photograph, tight crop, lettering across the action; portrait 4:5. |
-| A4 | Smiling chef with “Meet the people” over her apron | A person is the subject, expressive serif type belongs in the picture; portrait. |
+| A4 | Smiling chef with “Meet the people” over her apron | Expressive serif type belongs in the picture. The visible face is superseded by the user's later request to hide faces. |
 | A5 | Sunday Loftas, burgundy field, serif headline and keyhole photograph | A complete graphic composition, not a photo with a website caption; landscape about 3:2. |
 | A6 | The Lake House lettering over a tiled oven photograph | Warm large serif typography, dark photographic detail, restrained secondary type; portrait 4:5. |
 | A7 | “Meet me at the place”, white script and lime serif over a cropped person | Bold type/photo interaction and contrasting letter styles; square. |
-| A8 | Red-shirted brewer tying a green apron | Workwear, hands and a caught moment; honest detail rather than a staged lifestyle pose; square. |
+| A8 | Rear view of a red-shirted brewer tying a green apron | Face hidden; hands behind the lower back, natural workwear and a caught moment; square. Latest direction: large yellow supplied wordmark with subtle wear and a small brand-voice line below. |
 | A9 | Actual Manwill storefront at night | Existing place and sign. Reference for truth to the site, not a generated image. |
 | A10 | Actual daytime Manwill sign behind the large tree | Existing colours, compact premises and neighbourhood context. Use the actual photograph. |
 | B1 | Coffee dropping into a glass server, “Small actions, big impact” in white | The photograph carries the composition. Two compact blocks of tightly set neutral sans-serif sit in the image. Warm close detail, dark reflections, short lines; portrait 4:5 reference, adapted to a photo-only web cover. |
@@ -65,10 +73,14 @@ Keep Raagul’s direct language and contractions. Name practical outcomes: helpi
 Avoid little slogan triplets, “the pour, the pause, the attention”, “distinctly yours”, “a look makes a promise”, “unmistakably”, “territories”, “expressive layers”, or claims of transformation. None of the reference slogans is approved Manwill copy. Poster copy needs its own review before generation.
 
 
-## First review round
+## Application revisions
 
-`review.html` is an explicit preview page for Raagul, with three generated studies and an interactive photo-to-wordmark transition. The main proposal still uses placeholders; none of these images has been marked approved there. The review page is public on the requested GitHub Pages host and is not linked from the client-facing proposal. It is not a private or secret page.
+`review.html` is an explicit preview page for Raagul, with generated application previews and an interactive photo-to-wordmark transition. The main proposal still uses placeholders; none of these images has been marked approved there. The review page is public on the requested GitHub Pages host and is not linked from the client-facing proposal. It is not a private or secret page.
 
 Source: `production/motion/review-template.html`, `transition.js`, and `build-review.py`. The builder embeds assets into `production/review.html`, which is copied to `dist/review.html`. The standalone copy is `/workspace/scratch/manwill-previews/manwill-review.html`. This review-only export does not change the main-page approval requirement.
 
 The printed and embroidered marks in generated mockups closely follow the supplied reference but are not vector-exact. The review page states that limitation. Do not call them final production logo artwork. The animation uses the original vector path unchanged.
+
+The user liked tray v2; retain it alongside the new scalloped-card variant. The shirt copy must speak from Manwill, not from the wearer. “MANUAL COFFEE / PONDICHERRY” and “I’LL HAVE MY USUAL.” were rejected for the shirt. Do not reuse either in the shirt artwork. Category and location remain appropriate factual secondary information on the card.
+
+The latest shirt preview proposes “MAKE YOURSELF A REGULAR.” as an invitation from Manwill. It is a copy option for review, not an approved final tagline. Large yellow lettering and worn-in print were explicitly requested; the small-card direction does not apply to this shirt.
