@@ -1,6 +1,6 @@
 # Read this before resuming image work
 
-Image generation is paused. Raagul will supply the wordmarks. Use those files only. The old studies under `assets/identity/`, including the misleadingly named `manwill-primary`, must not be used. They were superseded by the user.
+Raagul has supplied the hand-lettered SVG at `assets/brand/manwill-hand-lettered-v2.svg` and asked the agents to resume. Three first-round pilots are complete and awaiting review. The chunky serif wordmark and coffee-lettering image are visible inline in chat but their original files are still needed. Use supplied files only. The old studies under `assets/identity/`, including the misleadingly named `manwill-primary`, must not be used. They were superseded by the user.
 
 Get agreement on one specific pilot before generating it. Show that pilot and get approval before the full set. This document and the empty frames do not authorize generation. Do not infer approval from elapsed time or from a request to change the website.
 
@@ -40,7 +40,7 @@ The latest four references reinforce the image/type relationship. Do not reduce 
 - A separate comparison agent, after approval: the two positive reference directions (coffee knowledge and sense of place). These no longer represent directions to avoid.
 - Parent: the actual shopfront photos, approved asset insertion, testing and publishing.
 
-No wordmark agent is needed. Supplied logo paths will be recorded here when Raagul sends them. At present there are none.
+No wordmark agent is needed. The supplied hand-lettered SVG is available; its faithful PNG render for image-generation reference is `/workspace/scratch/manwill-previews/identity/manwill-hand-lettered-v2.png`. Do not redraw the serif mark from memory. The current motion proof preserves the supplied SVG path exactly and uses the new macro coffee pilot as a temporary photo source.
 
 ## How the page handles the images
 
@@ -63,3 +63,12 @@ Latest user direction: professional, high-level and positive overall. Focus on w
 Keep Raagul’s direct language and contractions. Name practical outcomes: helping a first-time visitor choose a coffee, giving the brewer a presence in the photography, or making the business recognisable online. Keep paragraphs short and avoid jargon. “A proposal for how Manwill could build a stronger identity around the way it makes and serves coffee” is the intended register.
 
 Avoid little slogan triplets, “the pour, the pause, the attention”, “distinctly yours”, “a look makes a promise”, “unmistakably”, “territories”, “expressive layers”, or claims of transformation. None of the reference slogans is approved Manwill copy. Poster copy needs its own review before generation.
+
+
+## First review round
+
+`review.html` is an explicit preview page for Raagul, with three generated studies and an interactive photo-to-wordmark transition. The main proposal still uses placeholders; none of these images has been marked approved there. The review page is public on the requested GitHub Pages host and is not linked from the client-facing proposal. It is not a private or secret page.
+
+Source: `production/motion/review-template.html`, `transition.js`, and `build-review.py`. The builder embeds assets into `production/review.html`, which is copied to `dist/review.html`. The standalone copy is `/workspace/scratch/manwill-previews/manwill-review.html`. This review-only export does not change the main-page approval requirement.
+
+The printed and embroidered marks in generated mockups closely follow the supplied reference but are not vector-exact. The review page states that limitation. Do not call them final production logo artwork. The animation uses the original vector path unchanged.

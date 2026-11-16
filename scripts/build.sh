@@ -8,4 +8,5 @@ for item in inter-tight-latin.woff2 instrument-serif-regular.woff2 instrument-se
   cp "assets/$item" dist/assets/
 done
 python3 scripts/build-visuals.py
+if [[ -f production/review.html ]]; then cp production/review.html dist/review.html; fi
 touch dist/.nojekyll

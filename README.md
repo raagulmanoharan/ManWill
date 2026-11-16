@@ -13,11 +13,11 @@ Open http://localhost:8000. Fonts and other assets are local.
 
 ## Visual work
 
-Image generation is paused for review. Use only wordmarks supplied by Raagul. The old generated wordmark studies are superseded and are not published.
+The first three image pilots and a motion proof are ready for review at https://raagulmanoharan.github.io/ManWill/review.html . Further image production awaits review. The supplied hand-lettered SVG is in `assets/brand/`; the serif wordmark and coffee-lettering image still need original files. Previous agent-designed wordmark studies remain superseded.
 
 Read [the visual handoff](production/VISUAL-HANDOFF.md) before resuming. [The slot manifest](production/visual-slots.json) maps every reference, frame, format and agent assignment. There are twelve main-page frames and two slots for actual storefront photographs in the research notes.
 
-Only images marked `approved: true` in the manifest are inserted during the build. They need a file under `assets/visuals/`, actual dimensions and descriptive alt text. Unapproved files are not copied. Posters and printed pieces retain their complete composition at every viewport size. The cover alone crops a photo behind editable HTML text.
+Only images marked `approved: true` in the manifest are inserted into the main proposal during the build. The separate review page is explicitly for previewing candidates and is not linked from the proposal. They need a file under `assets/visuals/`, actual dimensions and descriptive alt text. Unapproved files are not copied. Posters and printed pieces retain their complete composition at every viewport size. The cover alone crops a photo behind editable HTML text.
 
 ## Files
 
@@ -35,3 +35,5 @@ The reply button only copies text. It does not send an Instagram message.
 https://raagulmanoharan.github.io/ManWill/
 
 Pushes to `main` run `.github/workflows/pages.yml`. Raw research documents, unapproved visuals, old wordmark studies and production notes are excluded from the deployment.
+
+The motion proof is authored in `production/motion/`. Rebuild its standalone HTML with `python3 production/motion/build-review.py` while the local preview assets are available. Its final SVG path is identical to the supplied file; reduced-motion preferences show a still wordmark.

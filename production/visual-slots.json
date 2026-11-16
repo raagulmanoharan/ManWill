@@ -1,6 +1,6 @@
 {
-  "wordmark_source": "Only files supplied by Raagul. All previous generated wordmark studies are superseded.",
-  "generation_status": "Paused. Get approval for a pilot before generating it, then approval of the pilot before the remaining set.",
+  "wordmark_source": "Use only supplied files. Hand-lettered SVG received at assets/brand/manwill-hand-lettered-v2.svg. Chunky serif wordmark is visible inline; original file still needed. All former agent wordmark studies are superseded.",
+  "generation_status": "Three pilots generated after the user asked to resume. Await review before producing the remaining set. Preview-only images are on review.html; no main-page visual has been approved.",
   "slots": [
     {
       "id": "cover-coffee",
@@ -14,7 +14,13 @@
       "references": [
         "B1"
       ],
-      "brief": "Photo only. Close to the coffee in the server, with the stream or a falling drop and warm reflections. Dark enough behind the two HTML text blocks. No baked-in headline, watermark or borrowed slogan. This is the only frame with a responsive photo crop; keep the action near the centre."
+      "brief": "Photo only. Close to the coffee in the server, with the stream or a falling drop and warm reflections. Dark enough behind the two HTML text blocks. No baked-in headline, watermark or borrowed slogan. This is the only frame with a responsive photo crop; keep the action near the centre.",
+      "review": {
+        "file": "/workspace/scratch/manwill-previews/craft/cover-coffee-pilot.png",
+        "width": 1536,
+        "height": 1024,
+        "status": "awaiting_user_review"
+      }
     },
     {
       "id": "people-candid",
@@ -44,7 +50,13 @@
         "A4",
         "A8"
       ],
-      "brief": "The person making the coffee: an unposed portrait or a moment tying an apron. Typography can sit with the person, as in the chef reference. Choose one treatment for review. Do not imply generated people are the actual Manwill staff."
+      "brief": "The person making the coffee: an unposed portrait or a moment tying an apron. Typography can sit with the person, as in the chef reference. Choose one treatment for review. Do not imply generated people are the actual Manwill staff.",
+      "review": {
+        "file": "/workspace/scratch/manwill-previews/hospitality/people-brewer-pilot-v1.png",
+        "width": 1122,
+        "height": 1402,
+        "status": "awaiting_user_review"
+      }
     },
     {
       "id": "people-social",
@@ -73,7 +85,13 @@
       "references": [
         "A2"
       ],
-      "brief": "Original Manwill printed card on a reflective steel tray, with cloth and physical paper detail. Use only the supplied wordmark. Show the complete card and leave its type legible. Do not copy the BARI lettering."
+      "brief": "Original Manwill printed card on a reflective steel tray, with cloth and physical paper detail. Use only the supplied wordmark. Show the complete card and leave its type legible. Do not copy the BARI lettering.",
+      "review": {
+        "file": "/workspace/scratch/manwill-previews/print/discovery-tray-pilot-v1.png",
+        "width": 1086,
+        "height": 1448,
+        "status": "awaiting_user_review"
+      }
     },
     {
       "id": "discovery-menu",
@@ -197,5 +215,21 @@
       ],
       "brief": "Use the actual nighttime storefront photo supplied by the user. Preserve the whole portrait, including its surroundings. Do not generate a substitute. Its local file path has not yet been resolved."
     }
-  ]
+  ],
+  "wordmarks": [
+    {
+      "id": "hand-lettered",
+      "src": "assets/brand/manwill-hand-lettered-v2.svg",
+      "status": "user_supplied"
+    },
+    {
+      "id": "serif",
+      "src": null,
+      "status": "original_file_needed"
+    }
+  ],
+  "coffee_lettering_reference": {
+    "src": null,
+    "status": "visible_in_chat_original_file_needed"
+  }
 }
