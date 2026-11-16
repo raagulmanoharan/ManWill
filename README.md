@@ -1,6 +1,6 @@
-# A closer look at Manwill
+# Some thoughts for Manwill
 
-A personal brand study by Raagul, built with HTML, CSS and JavaScript. The site presents the coffee landscape, three possibilities for Manwill, and an invitation to discuss them. Full-width visual placeholders are waiting for the supplied wordmarks and approved imagery.
+Raagul’s personal branding proposal for Manwill Brew. The writing follows his outreach: what he liked, what he looked at, and what he would like to discuss with the owners. Built with static HTML, CSS and JavaScript.
 
 ## Preview
 
@@ -9,24 +9,29 @@ bash scripts/build.sh
 python -m http.server 8000 --bind 0.0.0.0 --directory dist
 ```
 
-Open http://localhost:8000. Fonts, styles and scripts are hosted locally.
+Open http://localhost:8000. Fonts and other assets are local.
+
+## Visual work
+
+Image generation is paused for review. Use only wordmarks supplied by Raagul. The old generated wordmark studies are superseded and are not published.
+
+Read [the visual handoff](production/VISUAL-HANDOFF.md) before resuming. [The slot manifest](production/visual-slots.json) maps every reference, frame, format and agent assignment. There are twelve main-page frames and two slots for actual storefront photographs in the research notes.
+
+Only images marked `approved: true` in the manifest are inserted during the build. They need a file under `assets/visuals/`, actual dimensions and descriptive alt text. Unapproved files are not copied. Posters and printed pieces retain their complete composition at every viewport size. The cover alone crops a photo behind editable HTML text.
 
 ## Files
 
-- `index.html`: presentation with People, Discovery and Craft image sequences and expandable category research.
-- `research.html`: evidence, references and questions.
-- `styles.css`, `script.js`: responsive layout and interaction.
-- `assets/`: locally hosted Barlow Condensed and DM Sans with their licenses.
-- `scripts/build.sh`: copies only public site files to `dist/`.
+- `index.html`: the proposal and large image spreads.
+- `research.html`: source links, notes and questions for the owners.
+- `styles.css`: Inter Tight, Instrument Serif and responsive image layouts.
+- `script.js`: the copy-reply button and manual-copy fallback.
+- `production/`: reference descriptions and image handoff; excluded from the deployed website.
+- `scripts/build.sh`, `scripts/build-visuals.py`: build the public static files in `dist/`.
 
-The conversation button copies a suggested reply for the existing Instagram conversation. It does not send a message. A selectable text fallback works when clipboard access is unavailable.
+The reply button only copies text. It does not send an Instagram message.
 
 ## Publishing
 
-GitHub Pages: https://raagulmanoharan.github.io/ManWill/
+https://raagulmanoharan.github.io/ManWill/
 
-The workflow in `.github/workflows/pages.yml` builds and deploys on pushes to `main`. Raw research documents, internal plans, unused design assets and unapproved wordmark studies are excluded from the build.
-
-## Research
-
-Sources and the limits of the research are described on the research page. The study does not claim a customer survey, validated market sizing or an agreed branding commission.
+Pushes to `main` run `.github/workflows/pages.yml`. Raw research documents, unapproved visuals, old wordmark studies and production notes are excluded from the deployment.
