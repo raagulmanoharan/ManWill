@@ -17,7 +17,7 @@ values = {
     '__COFFEE_DATA__': data(previews / 'craft/cover-coffee-pilot.webp', 'image/webp'),
     '__PRINT_DATA__': data(previews / 'print/discovery-tray-pilot-v2.webp', 'image/webp'),
     '__PRINT_VARIANT_DATA__': data(previews / 'print/discovery-tray-pilot-variant.webp', 'image/webp'),
-    '__PEOPLE_DATA__': data(previews / 'hospitality/people-brewer-fresh-printed-preview.webp', 'image/webp'),
+    '__PEOPLE_DATA__': data(previews / 'hospitality/people-brewer-brand-preview.webp', 'image/webp'),
     '__MARK_PATH__': path,
     '__MOTION_SCRIPT__': (root / 'production/motion/transition.js').read_text(),
 }

@@ -1,6 +1,6 @@
 {
   "wordmark_source": "Use only supplied files. Hand-lettered SVG received at assets/brand/manwill-hand-lettered-v2.svg. Chunky serif wordmark is visible inline; original file still needed. All former agent wordmark studies are superseded.",
-  "generation_status": "User selected tray option 1 (plain card and coffee glass), approved and inserted into the proposal. A fresh shirt photograph corrects the flat print; shirt and copy await review. Other images await review before the remaining set is produced.",
+  "generation_status": "User selected tray option 1 and restored the previous straight-on yellow T-shirt (people-brewer-brand-preview), rejecting the fresh frame because the wordmark changed. Both selected applications are approved for the proposal. User explicitly authorized the next set: five photo-led editorial compositions in progress, using the original SVG directly for typography.",
   "slots": [
     {
       "id": "cover-coffee",
@@ -35,29 +35,32 @@
         "A3",
         "B3"
       ],
-      "brief": "A moment around the coffee counter with relaxed posture and a close crop. Hide faces completely; show hands, backs or a crop below the head. Available light or modest flash fill, restrained colour and natural detail. Any physical Manwill mark stays small. Preserve the full portrait."
+      "brief": "A moment around the coffee counter with relaxed posture and a close crop. Hide faces completely; show hands, backs or a crop below the head. Available light or modest flash fill, restrained colour and natural detail. Any physical Manwill mark stays small. Preserve the full portrait.",
+      "production_status": "next_set_authorized",
+      "wordmark_application": "Original supplied SVG as an intentional editorial HTML layer. Photo generation must contain no lettering or logos."
     },
     {
       "id": "people-brewer",
       "page": "index.html",
-      "width": 1600,
-      "height": 2000,
-      "src": null,
-      "approved": false,
-      "alt": "",
+      "width": 1122,
+      "height": 1402,
+      "src": "assets/visuals/people-brewer.webp",
+      "approved": true,
+      "alt": "Proposed Manwill workwear image: a brewer seen from behind, face out of frame, tying an apron over a red T-shirt with the yellow Manwill mark and Make yourself a regular.",
       "owner": "hospitality_images",
       "references": [
         "A8"
       ],
-      "brief": "Rear view of a brewer in a faded red T-shirt tying narrow green apron strings behind the lower back. Head and face out of frame. Apron body remains in front; no broad rear panel. Large warm-yellow supplied wordmark across the back with lightly worn ink and a small brand-voice line beneath. No location/category descriptor or customer-voice line on the shirt. Natural light, believable hands and clothing. Do not imply the generated person is actual Manwill staff. The yellow wordmark and supporting line must deform with the cotton surface and inherit its weave and local lighting; no flat overlay. Subtle ink wear only.",
+      "brief": "Selected image is locked: use people-brewer-brand-preview.png unchanged. No more print-realism edits or logo regeneration; user explicitly restored this version because the later wordmark looked modified.",
       "review": {
-        "file": "/workspace/scratch/manwill-previews/hospitality/people-brewer-fresh-printed-preview.png",
+        "file": "/workspace/scratch/manwill-previews/hospitality/people-brewer-brand-preview.png",
         "width": 1122,
         "height": 1402,
-        "status": "awaiting_user_review",
-        "revision": "Fresh editorial photograph with a large warm-yellow print physically following cotton folds, torso curvature and local lighting; lightly worn ink. Rear view, face hidden, realistic apron ties.",
+        "status": "user_selected_previous_image",
+        "revision": "Restored the previous published straight-on shirt image unchanged. User preferred its wordmark to the fresh angled frame.",
         "supporting_copy": "MAKE YOURSELF A REGULAR.",
-        "copy_status": "proposed_for_review"
+        "copy_status": "selected_for_this_application",
+        "rejected_alternative": "/workspace/scratch/manwill-previews/hospitality/people-brewer-fresh-printed-preview.png"
       }
     },
     {
@@ -73,7 +76,9 @@
         "A7",
         "B4"
       ],
-      "brief": "A square image and type composition. Candid photograph with face hidden, close crop, compact bold sans with one deliberate expressive serif/script gesture if approved. Lettering interacts with the photograph. Physical branding is discreet; poster typography may be large. No social-app icons, copied slogan or third-party handles."
+      "brief": "A square image and type composition. Candid photograph with face hidden, close crop, compact bold sans with one deliberate expressive serif/script gesture if approved. Lettering interacts with the photograph. Physical branding is discreet; poster typography may be large. No social-app icons, copied slogan or third-party handles.",
+      "production_status": "next_set_authorized",
+      "wordmark_application": "Original supplied SVG as an intentional editorial HTML layer. Photo generation must contain no lettering or logos."
     },
     {
       "id": "discovery-tray",
@@ -115,7 +120,9 @@
       "references": [
         "A2"
       ],
-      "brief": "A related menu and cup application in use, with the supplied wordmark. Continue the material world of the tray photograph. No invented prices, origin claims or unconfirmed menu items. Keep the physical mark small and light natural. Follow the revised tray direction; avoid a glossy product mockup."
+      "brief": "A related menu and cup application in use, with the supplied wordmark. Continue the material world of the tray photograph. No invented prices, origin claims or unconfirmed menu items. Keep the physical mark small and light natural. Follow the revised tray direction; avoid a glossy product mockup.",
+      "production_status": "next_set_authorized",
+      "wordmark_application": "Original supplied SVG as an intentional editorial HTML layer. Photo generation must contain no lettering or logos."
     },
     {
       "id": "handwritten-poster",
@@ -143,7 +150,9 @@
       "references": [
         "B2"
       ],
-      "brief": "Close manual pour-over photograph with warm, imperfect light and a large editorial serif line that belongs to the image. Regular/italic contrast should be purposeful, as in the Lunet reference. Do not copy Small Cup. Big Shift., Love Lunet, or its handle. Approved Manwill wordmark only."
+      "brief": "Close manual pour-over photograph with warm, imperfect light and a large editorial serif line that belongs to the image. Regular/italic contrast should be purposeful, as in the Lunet reference. Do not copy Small Cup. Big Shift., Love Lunet, or its handle. Approved Manwill wordmark only.",
+      "production_status": "next_set_authorized",
+      "wordmark_application": "Original supplied SVG as an intentional editorial HTML layer. Photo generation must contain no lettering or logos."
     },
     {
       "id": "craft-poster",
@@ -157,7 +166,9 @@
       "references": [
         "A6"
       ],
-      "brief": "A second portrait poster with expressive serif type over a believable working coffee setting. Use the Lake House reference for type weight, scale, and its relationship to a dark photograph, not its oven, brand or wording."
+      "brief": "A second portrait poster with expressive serif type over a believable working coffee setting. Use the Lake House reference for type weight, scale, and its relationship to a dark photograph, not its oven, brand or wording.",
+      "production_status": "next_set_authorized",
+      "wordmark_application": "Original supplied SVG as an intentional editorial HTML layer. Photo generation must contain no lettering or logos."
     },
     {
       "id": "landscape-poster",

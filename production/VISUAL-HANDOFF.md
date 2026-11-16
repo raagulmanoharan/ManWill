@@ -1,8 +1,8 @@
 # Read this before resuming image work
 
-Raagul has supplied the hand-lettered SVG at `assets/brand/manwill-hand-lettered-v2.svg` and asked the agents to resume. Three first-round pilots are complete. The tray and brewer previews have been revised following his feedback on logo scale and photographic realism; the full set still awaits approval. The chunky serif wordmark and coffee-lettering image are visible inline in chat but their original files are still needed. Use supplied files only. The old studies under `assets/identity/`, including the misleadingly named `manwill-primary`, must not be used. They were superseded by the user.
+Raagul has supplied the hand-lettered SVG at `assets/brand/manwill-hand-lettered-v2.svg` and asked the agents to resume. Three first-round pilots are complete. The user selected the plain-card tray and restored the previous straight-on yellow T-shirt. He explicitly authorized the next set of work. The chunky serif wordmark and coffee-lettering image are visible inline in chat but their original files are still needed. Use supplied files only. The old studies under `assets/identity/`, including the misleadingly named `manwill-primary`, must not be used. They were superseded by the user.
 
-The user has authorized revisions of the current application previews. Correct defects within those revisions without asking again. Show the revised pilots and get approval before producing the full set. This document and the empty frames do not authorize further image production. Do not infer approval from elapsed time or from a request to change the website.
+The user explicitly authorized the next set of work after selecting the first applications. Proceed with five new pieces: people-candid, people-social, discovery-menu, craft-pour and craft-poster. No further permission is needed to produce this set and show it on the review page. Keep other future concepts pending. Do not alter the two selected application images.
 
 The website is a personal proposal to the café, not its finished customer-facing website. The images should demonstrate the work Raagul could do. Generated staff or interiors must be described as proposed images, not documentary photographs. Once a generated image is approved for use, include that distinction naturally in its alt text or an accompanying note.
 
@@ -75,7 +75,7 @@ Avoid little slogan triplets, “the pour, the pause, the attention”, “disti
 
 ## Application revisions
 
-`review.html` is an explicit preview page for Raagul, with generated application previews and an interactive photo-to-wordmark transition. Tray option 1 (the plain card and coffee glass) is selected and approved for the main proposal. Other slots remain placeholders pending review. The review page is public on the requested GitHub Pages host and is not linked from the client-facing proposal. It is not a private or secret page.
+`review.html` is an explicit preview page for Raagul, with generated application previews and an interactive photo-to-wordmark transition. Tray option 1 (the plain card and coffee glass) is selected and approved for the main proposal. The selected previous T-shirt is also approved and inserted. Other slots remain placeholders pending review. The review page is public on the requested GitHub Pages host and is not linked from the client-facing proposal. It is not a private or secret page.
 
 Source: `production/motion/review-template.html`, `transition.js`, and `build-review.py`. The builder embeds assets into `production/review.html`, which is copied to `dist/review.html`. The standalone copy is `/workspace/scratch/manwill-previews/manwill-review.html`. This review-only export does not change the main-page approval requirement.
 
@@ -88,3 +88,9 @@ The latest shirt preview proposes “MAKE YOURSELF A REGULAR.” as an invitatio
 Latest shirt feedback: the text looked overlaid. Both the supplied yellow wordmark and small line must follow the fabric’s physical curvature, folds, weave and local highlights/shadows. Mere noise or uniform distress over undeformed letters does not address this. Keep copy and placement unchanged while correcting print integration.
 
 Do not use people-brewer-printed-preview.png or people-brewer-printed-v2-preview.png as source images: iterative edits introduced coarse artificial swirl texture into the cloth. They failed internal review. The fresh candidate people-brewer-fresh-printed-preview.png was made using only the supplied artwork reference. It removes the coarse swirls and uses an angled rear view with a real fold through the printed lettering. It is the current shirt candidate for review, not an approved main-page image.
+
+## Current selection and next set
+
+The latest user instruction overrides the shirt realism experiments: restore `people-brewer-brand-preview.png` unchanged. The fresh angled image was rejected because the wordmark looked modified. Do not repair or regenerate the selected shirt. Tray option 1 remains selected. Both selected exports are copied byte-for-byte under `assets/visuals/`.
+
+The next five pieces are photo-led editorial compositions. Generate photographs without logos or lettering. Add the original supplied SVG directly as a deliberate graphic element in the HTML artwork; preserve its exact path and aspect ratio. This is poster typography, not a simulated print onto a shirt or paper. Typography uses Inter Tight and Instrument Serif, with distinct arrangements informed by the supplied references. This prevents further generator changes to the wordmark. New copy and compositions are for review.
