@@ -13,7 +13,7 @@ Open http://localhost:8000. Fonts and other assets are local.
 
 ## Visual work
 
-A revised yellow T-shirt, two tray options and a motion proof are ready for review at https://raagulmanoharan.github.io/ManWill/review.html . Further image production awaits review. The supplied hand-lettered SVG is in `assets/brand/`; the serif wordmark and coffee-lettering image still need original files. Previous agent-designed wordmark studies remain superseded.
+A revised yellow T-shirt, two tray options and a motion proof are ready for review at https://raagulmanoharan.github.io/ManWill/review.html . Tray option 1 is selected and appears in the proposal. Further image production awaits review. The supplied hand-lettered SVG is in `assets/brand/`; the serif wordmark and coffee-lettering image still need original files. Previous agent-designed wordmark studies remain superseded.
 
 Read [the visual handoff](production/VISUAL-HANDOFF.md) before resuming. [The slot manifest](production/visual-slots.json) maps every reference, frame, format and agent assignment. There are twelve main-page frames and two slots for actual storefront photographs in the research notes.
 

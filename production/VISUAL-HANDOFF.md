@@ -75,12 +75,16 @@ Avoid little slogan triplets, “the pour, the pause, the attention”, “disti
 
 ## Application revisions
 
-`review.html` is an explicit preview page for Raagul, with generated application previews and an interactive photo-to-wordmark transition. The main proposal still uses placeholders; none of these images has been marked approved there. The review page is public on the requested GitHub Pages host and is not linked from the client-facing proposal. It is not a private or secret page.
+`review.html` is an explicit preview page for Raagul, with generated application previews and an interactive photo-to-wordmark transition. Tray option 1 (the plain card and coffee glass) is selected and approved for the main proposal. Other slots remain placeholders pending review. The review page is public on the requested GitHub Pages host and is not linked from the client-facing proposal. It is not a private or secret page.
 
 Source: `production/motion/review-template.html`, `transition.js`, and `build-review.py`. The builder embeds assets into `production/review.html`, which is copied to `dist/review.html`. The standalone copy is `/workspace/scratch/manwill-previews/manwill-review.html`. This review-only export does not change the main-page approval requirement.
 
 The printed and embroidered marks in generated mockups closely follow the supplied reference but are not vector-exact. The review page states that limitation. Do not call them final production logo artwork. The animation uses the original vector path unchanged.
 
-The user liked tray v2; retain it alongside the new scalloped-card variant. The shirt copy must speak from Manwill, not from the wearer. “MANUAL COFFEE / PONDICHERRY” and “I’LL HAVE MY USUAL.” were rejected for the shirt. Do not reuse either in the shirt artwork. Category and location remain appropriate factual secondary information on the card.
+The user explicitly selected tray option 1: plain card with coffee glass, source discovery-tray-pilot-v2.png. Preserve it unchanged and use it for the main discovery-tray slot. Keep the scalloped card as an unselected review alternative. The shirt copy must speak from Manwill, not from the wearer. “MANUAL COFFEE / PONDICHERRY” and “I’LL HAVE MY USUAL.” were rejected for the shirt. Do not reuse either in the shirt artwork. Category and location remain appropriate factual secondary information on the card.
 
 The latest shirt preview proposes “MAKE YOURSELF A REGULAR.” as an invitation from Manwill. It is a copy option for review, not an approved final tagline. Large yellow lettering and worn-in print were explicitly requested; the small-card direction does not apply to this shirt.
+
+Latest shirt feedback: the text looked overlaid. Both the supplied yellow wordmark and small line must follow the fabric’s physical curvature, folds, weave and local highlights/shadows. Mere noise or uniform distress over undeformed letters does not address this. Keep copy and placement unchanged while correcting print integration.
+
+Do not use people-brewer-printed-preview.png or people-brewer-printed-v2-preview.png as source images: iterative edits introduced coarse artificial swirl texture into the cloth. They failed internal review. The fresh candidate people-brewer-fresh-printed-preview.png was made using only the supplied artwork reference. It removes the coarse swirls and uses an angled rear view with a real fold through the printed lettering. It is the current shirt candidate for review, not an approved main-page image.

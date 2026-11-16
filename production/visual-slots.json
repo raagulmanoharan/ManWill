@@ -1,6 +1,6 @@
 {
   "wordmark_source": "Use only supplied files. Hand-lettered SVG received at assets/brand/manwill-hand-lettered-v2.svg. Chunky serif wordmark is visible inline; original file still needed. All former agent wordmark studies are superseded.",
-  "generation_status": "Revised application previews: tray v2 retained with a new scalloped-card variant; shirt has a large yellow worn print and a proposed brand-voice line. Await review before producing the remaining set. Main proposal slots remain pending.",
+  "generation_status": "User selected tray option 1 (plain card and coffee glass), approved and inserted into the proposal. A fresh shirt photograph corrects the flat print; shirt and copy await review. Other images await review before the remaining set is produced.",
   "slots": [
     {
       "id": "cover-coffee",
@@ -49,13 +49,13 @@
       "references": [
         "A8"
       ],
-      "brief": "Rear view of a brewer in a faded red T-shirt tying narrow green apron strings behind the lower back. Head and face out of frame. Apron body remains in front; no broad rear panel. Large warm-yellow supplied wordmark across the back with lightly worn ink and a small brand-voice line beneath. No location/category descriptor or customer-voice line on the shirt. Natural light, believable hands and clothing. Do not imply the generated person is actual Manwill staff.",
+      "brief": "Rear view of a brewer in a faded red T-shirt tying narrow green apron strings behind the lower back. Head and face out of frame. Apron body remains in front; no broad rear panel. Large warm-yellow supplied wordmark across the back with lightly worn ink and a small brand-voice line beneath. No location/category descriptor or customer-voice line on the shirt. Natural light, believable hands and clothing. Do not imply the generated person is actual Manwill staff. The yellow wordmark and supporting line must deform with the cotton surface and inherit its weave and local lighting; no flat overlay. Subtle ink wear only.",
       "review": {
-        "file": "/workspace/scratch/manwill-previews/hospitality/people-brewer-brand-preview.png",
+        "file": "/workspace/scratch/manwill-previews/hospitality/people-brewer-fresh-printed-preview.png",
         "width": 1122,
         "height": 1402,
         "status": "awaiting_user_review",
-        "revision": "Face hidden, rear view, plausible apron ties, large yellow supplied mark with lightly worn ink.",
+        "revision": "Fresh editorial photograph with a large warm-yellow print physically following cotton folds, torso curvature and local lighting; lightly worn ink. Rear view, face hidden, realistic apron ties.",
         "supporting_copy": "MAKE YOURSELF A REGULAR.",
         "copy_status": "proposed_for_review"
       }
@@ -78,11 +78,11 @@
     {
       "id": "discovery-tray",
       "page": "index.html",
-      "width": 1800,
-      "height": 2400,
-      "src": null,
-      "approved": false,
-      "alt": "",
+      "width": 1086,
+      "height": 1448,
+      "src": "assets/visuals/discovery-tray.webp",
+      "approved": true,
+      "alt": "Proposed Manwill print application: a small cream card with dark hand-lettering beside a coffee glass on a steel tray and rust-coloured linen.",
       "owner": "print_images",
       "references": [
         "A2"
@@ -92,13 +92,13 @@
         "file": "/workspace/scratch/manwill-previews/print/discovery-tray-pilot-v2.png",
         "width": 1086,
         "height": 1448,
-        "status": "user_liked_retained_for_comparison",
+        "status": "user_selected_option_1",
         "revision": "Smaller card and wordmark, plain stock, softer light, more surrounding cloth.",
         "variant": {
           "file": "/workspace/scratch/manwill-previews/print/discovery-tray-pilot-variant.png",
           "width": 1086,
           "height": 1448,
-          "status": "awaiting_user_review",
+          "status": "retained_as_alternative_not_selected",
           "direction": "Top-down full vertical steel tray, small scalloped cream card, quiet dark mark and factual secondary type. Closer to A2."
         }
       }
