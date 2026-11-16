@@ -1,3 +1,5 @@
+> **Superseded for the current site revision:** read [the editorial plan](editorial/PLAN.md) and [current QA](editorial/QA.md). The user authorized new copy, a shorter page, new imagery and bean packaging. The exact coffee-lettering photograph is now available and integrated. The historical notes below retain prior decisions; they do not override the new brief.
+
 # Manwill reference and art-direction memory
 
 Updated 2026-11-16. This records the user's references, subsequent corrections and the current allocation of artwork. It is an internal production record, not website copy.

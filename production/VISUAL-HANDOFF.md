@@ -1,3 +1,5 @@
+> **Superseded for the current site revision:** read [the editorial plan](editorial/PLAN.md) and [current QA](editorial/QA.md). The user authorized new copy, a shorter page, new imagery and bean packaging. The exact coffee-lettering photograph is now available and integrated. The historical notes below retain prior decisions; they do not override the new brief.
+
 # Manwill visual handoff
 
 The user has authorized the full website, remaining image generation, review and publication on GitHub Pages. This supersedes earlier per-image approval gates. All twelve proposed artwork frames and two authentic shop photographs are part of that production brief.

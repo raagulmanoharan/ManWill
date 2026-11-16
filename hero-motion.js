@@ -1,69 +1,81 @@
 (() => {
   const stage = document.getElementById('hero-motion');
   if (!stage) return;
-  const photo = stage.querySelector('img');
-  const paper = stage.querySelector('.hero-paper');
-  const ink = stage.querySelector('.hero-ink');
-  const displacement = document.getElementById('coffee-displacement');
-  const toggle = document.getElementById('hero-toggle');
+  const photo = document.getElementById('coffee-photo');
+  const finalFrame = stage.querySelector('.hero-final');
+  const controls = document.querySelector('.hero-controls');
   const photoButton = document.getElementById('hero-photo');
   const markButton = document.getElementById('hero-mark');
+  const toggle = document.getElementById('hero-toggle');
   const status = document.getElementById('hero-motion-status');
-  if (!photo || !paper || !ink || !toggle) return;
-  const reduced = matchMedia('(prefers-reduced-motion: reduce)');
-  let progress = 0, running = false, frame = null, interacted = false;
-  const clamp = value => Math.min(1, Math.max(0, value));
-  const ease = value => { const t = clamp(value); return t * t * (3 - 2 * t); };
-  function render(value) {
-    progress = clamp(value);
-    const form = ease((progress - .2) / .43);
-    const settle = ease((progress - .66) / .24);
-    paper.style.opacity = String(form);
-    ink.style.opacity = String(settle);
-    photo.style.opacity = String(1 - settle);
-    photo.style.transform = `translateY(${-3 * form}%) scale(${1.02 + .07 * form})`;
-    displacement.setAttribute('scale', String(18 * Math.sin(Math.PI * form) * (1 - settle)));
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
+  let progress = 0, target = 1, running = false, visible = false, ready = false;
+  let autoStarted = false, frame = 0, last = 0, autoTimer = 0;
+  const duration = 2600;
+  const canRun = () => visible && !document.hidden && ready;
+  function paint() {
+    const eased = progress * progress * (3 - 2 * progress);
+    finalFrame.style.opacity = String(eased);
     photoButton.setAttribute('aria-pressed', String(progress === 0));
     markButton.setAttribute('aria-pressed', String(progress === 1));
-    toggle.textContent = running ? 'Pause transition' : progress === 1 ? 'Back to coffee' : 'Play transition';
+    toggle.textContent = running ? 'Pause' : (progress > 0 && progress < 1 ? 'Continue' : 'Replay');
+    toggle.setAttribute('aria-label', running ? 'Pause transition' : (progress > 0 && progress < 1 ? 'Continue transition' : 'Replay coffee to wordmark transition'));
   }
-  function pause() { cancelAnimationFrame(frame); running = false; render(progress); }
-  function play() {
-    pause();
-    const from = progress, to = progress === 1 ? 0 : 1;
-    const duration = 6200 * Math.abs(to - from), start = performance.now();
-    running = true;
-    render(progress);
-    const tick = now => {
-      const elapsed = clamp((now - start) / duration);
-      render(from + (to - from) * elapsed);
-      if (elapsed < 1) frame = requestAnimationFrame(tick);
-      else { running = false; render(to); status.textContent = to ? 'Manwill wordmark.' : 'Coffee photograph.'; }
-    };
-    frame = requestAnimationFrame(tick);
+  function announce() {
+    status.textContent = progress === 0 ? 'The coffee-lettering photograph is displayed.' : progress === 1 ? 'The original Manwill wordmark is displayed.' : 'The transition is paused.';
   }
-  toggle.addEventListener('click', () => { interacted = true; running ? pause() : play(); });
-  photoButton.addEventListener('click', () => { interacted = true; pause(); render(0); status.textContent = 'Coffee photograph.'; });
-  markButton.addEventListener('click', () => { interacted = true; pause(); render(1); status.textContent = 'Manwill wordmark.'; });
-  document.addEventListener('visibilitychange', () => { if (document.hidden) pause(); });
-  reduced.addEventListener('change', event => { if (event.matches) { pause(); render(1); } });
-  new IntersectionObserver(entries => { if (!entries[0].isIntersecting) pause(); }, {threshold:0}).observe(stage);
-  function fitLayers() {
-    const {width, height} = stage.getBoundingClientRect();
-    const markWidth = Math.min(width * .84, height * .8 * 1444 / 476);
-    const markHeight = markWidth * 476 / 1444;
-    for (const layer of [paper, ink]) {
-      layer.setAttribute('viewBox', `0 0 ${width} ${height}`);
-      const mark = layer.querySelector('svg');
-      mark.setAttribute('x', String((width - markWidth) / 2));
-      mark.setAttribute('y', String((height - markHeight) / 2));
-      mark.setAttribute('width', String(markWidth));
-      mark.setAttribute('height', String(markHeight));
+  function tick(now) {
+    frame = 0;
+    if (!running || !canRun()) { last = 0; return; }
+    if (last) {
+      const step = Math.min(now - last, 80) / duration;
+      progress = target === 1 ? Math.min(1, progress + step) : Math.max(0, progress - step);
     }
+    last = now;
+    if (progress === target) { running = false; last = 0; announce(); }
+    paint();
+    if (running) frame = requestAnimationFrame(tick);
   }
-  new ResizeObserver(fitLayers).observe(stage);
-  fitLayers();
-  document.querySelector('.hero-controls').hidden = false;
-  render(reduced.matches ? 1 : 0);
-  photo.decode().catch(() => {}).then(() => { if (!reduced.matches && !document.hidden && !interacted) play(); });
+  function schedule() {
+    if (running && canRun() && !frame) { last = 0; frame = requestAnimationFrame(tick); }
+  }
+  function cancelAutoplay() { autoStarted = true; clearTimeout(autoTimer); }
+  function goTo(value) {
+    cancelAutoplay(); target = value;
+    if (reduced.matches) { progress = value; running = false; paint(); announce(); return; }
+    running = progress !== target; paint(); schedule();
+  }
+  photoButton.addEventListener('click', () => goTo(0));
+  markButton.addEventListener('click', () => goTo(1));
+  toggle.addEventListener('click', () => {
+    cancelAutoplay();
+    if (reduced.matches) { progress = progress < 1 ? 1 : 0; target = progress; running = false; paint(); announce(); return; }
+    if (running) { running = false; last = 0; paint(); announce(); return; }
+    if (progress === 0 || progress === 1) { progress = 0; target = 1; }
+    running = true; paint(); schedule();
+  });
+  function maybeAutoplay() {
+    if (autoStarted || reduced.matches || !canRun()) return;
+    clearTimeout(autoTimer);
+    autoTimer = setTimeout(() => {
+      if (!canRun() || reduced.matches) return;
+      autoStarted = true; running = true; target = 1; paint(); schedule();
+    }, 1500);
+  }
+  const observer = new IntersectionObserver(entries => {
+    visible = entries[0].isIntersecting;
+    if (!visible) { clearTimeout(autoTimer); last = 0; }
+    else { maybeAutoplay(); schedule(); }
+  }, { threshold: .25 });
+  observer.observe(stage);
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) { clearTimeout(autoTimer); last = 0; }
+    else { maybeAutoplay(); schedule(); }
+  });
+  reduced.addEventListener('change', () => {
+    if (reduced.matches) { cancelAutoplay(); running = false; progress = progress >= .5 ? 1 : 0; paint(); announce(); }
+  });
+  photo.decode().then(() => { ready = true; controls.hidden = false; paint(); maybeAutoplay(); }).catch(() => {
+    ready = true; progress = 1; finalFrame.style.opacity = '1'; status.textContent = 'The original Manwill wordmark is displayed.';
+  });
 })();

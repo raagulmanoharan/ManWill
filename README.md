@@ -1,35 +1,37 @@
-# Branding ideas for Manwill
+# Manwill · At the bar. Beyond the bar.
 
-A visual branding proposal by Raagul, with twelve full-size artworks, two verified photographs of the actual shop, a coffee-to-wordmark transition and a linked research page. The content connects the proposed wordmark and art direction to the three research wedges and Raagul’s offer.
+An editorial brand proposal by Raagul for Manwill Brew. The current revision includes a white-background edit of the supplied coffee-lettering photograph dissolving into the original wordmark, two campaign compositions, a close brewing photograph, a new whole-bean packaging concept, a take-home brew card, and the selected shirt and tray applications.
 
 **Website:** https://raagulmanoharan.github.io/ManWill/
 
-## Preview and publish
+## Build and publish
 
 ```sh
 bash scripts/build.sh
-python3 -m http.server 8000 --bind 0.0.0.0 --directory dist
+node tests/hero-motion.cjs
+python3 tests/static-check.py
 ```
 
-Pushes to `main` deploy `dist/` through `.github/workflows/pages.yml`. HTML, CSS, JavaScript, fonts and artwork are local assets. Raw research and production photographs are excluded from the deployment.
+Pushes to `main` publish `dist/` through the existing GitHub Pages workflow. The build copies only the two current pages and their local assets, then adds content hashes to asset URLs. It does not publish the older artwork review workbook or source references.
 
-## Editing
+For a conventional local preview, serve `dist/` with your preferred static server. The managed Cloud environment uses `sites-preview` with an ignored local preview configuration.
 
-- `index.html`, `research.html`, `styles.css`, `script.js`: proposal, research and reply-copy interaction.
-- `production/visual-slots.json`: fourteen included images, actual dimensions and alt text.
-- `assets/brand/manwill-hand-lettered-v2.svg`: the supplied original wordmark. Earlier generated identity studies are superseded.
-- `hero-motion.css`, `hero-motion.js`, `scripts/build-motion.py`: accessible image-to-wordmark motion using the exact SVG path.
-- `production/hospitality-art/`, `production/discovery-art/`, `production/coffee-art/`, `production/final-art/`: independently authored artwork layouts with sans-serif headlines whose words share one size within each artwork.
-- `production/photos/`: source concept photography and the credited actual doorway photograph.
+## Current sources
 
-Read [the visual handoff](production/VISUAL-HANDOFF.md) before changing artwork. Rebuild the self-contained review workbook with `python3 production/motion/build-review.py`. Serve it locally and run `scripts/export-artwork.cjs` with Playwright and Chromium available to export the nine designed compositions. The shirt, selected tray and cover are direct photograph exports.
+- `index.html`, `styles.css`: the proposal, campaign overlays and editable brew card.
+- `research.html`: context, actual shop photographs, credits and production notes.
+- `hero-motion.js`, `hero-motion.css`: single-play dissolve and accessible manual controls. Pausing preserves the playback direction; hidden tabs and offscreen heroes suspend animation; reduced motion uses instant endpoints.
+- `assets/editorial/coffee-lettering-original.jpg`: unchanged uploaded source, retained in the repository.
+- `assets/editorial/coffee-lettering-white.webp`: background-neutralized hero edit requested in the latest feedback. The website canvas is pure white.
+- `script.js` and `assets/vendor/`: locally vendored GSAP/ScrollTrigger 3.15.1 for one-time heading and artwork reveals. CSS supplies small hover transitions; reduced-motion users get a still page.
+- `assets/brand/manwill-hand-lettered-v2.svg`: unchanged original logotype. Native applications use the entire SVG, without path replacement or distortion.
+- `assets/editorial/{counter,pour,macro,beans}.webp`: the four new optimized generated photographs.
+- `assets/visuals/people-brewer.webp` and `discovery-tray.webp`: previously selected applications, preserved unchanged.
+- `production/editorial/PLAN.md`: current creative brief, asset prompts, source distinctions and implementation decisions.
+- `production/editorial/QA.md`: checks for this revision.
 
-Campaign photographs are generated proposals, except for the credited actual doorway used in the landscape poster. The two current-brand photographs are also authentic and credited on the research page. Physical shirt/card logos are illustrative mockups; graphic overlays and animation use the supplied vector unchanged. The reply button copies text and never sends a message.
+The current brief supersedes the older instruction to preserve the copy and twelve-image architecture. `production/visual-slots.json`, the old artwork compositions and older motion builders remain historical source material and are no longer used by the site build.
 
-Typography uses the verified Inter Tight variable font. Within each campaign headline, all words use the same size and weight; no serif display fonts are deployed. The supplied wordmark and existing shop signage are preserved. See production/FONT-SOURCE.md.
+## Production limits
 
-## Current hero dependency
-
-The user requested their coffee-written Manwill photograph dissolving to the original SVG. That photograph is visible inline in the conversation but has not been supplied as an accessible file. The existing macro-to-wordmark hero is an earlier implementation and does **not** fulfil this correction. Exact-source requirements and the implementation plan are in `production/motion/COFFEE-LETTERING-HANDOFF.md`.
-
-Read `production/REFERENCE-DIRECTION.md` for the recovered references, latest constraints and distinct photo allocation.
+The main page presents proposed work. Generated people and environments are not documentary photographs of Manwill. Actual shop photographs and credits are on the notes page. The 250 g bags illustrate the packaging system; final coffee names, origin, roast details, pack sizes/materials and required label information need confirmation. Physical mockups are illustrative; final print artwork should use the supplied vector master.

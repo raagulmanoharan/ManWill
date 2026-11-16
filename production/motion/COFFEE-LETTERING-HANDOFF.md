@@ -1,3 +1,5 @@
+> **Resolved in the editorial revision:** the exact uploaded image is now `assets/editorial/coffee-lettering-original.jpg` and the shared-canvas dissolve is implemented in `hero-motion.js` / `hero-motion.css`. See `production/editorial/PLAN.md` and `QA.md`. The original waiting status below is historical.
+
 # Exact coffee-lettering photograph → supplied SVG
 
 Status: awaiting the user’s original coffee-written photograph as a local attachment. Do not substitute an image, invent its lettering placement, or change the current hero implementation before that file is available.

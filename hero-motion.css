@@ -1,13 +1,17 @@
-#hero-motion{position:relative;aspect-ratio:8/5;overflow:hidden;background:#f3f0e7}
-#hero-motion [data-visual="cover-coffee"]{position:absolute;inset:0;aspect-ratio:auto;height:100%}
-#hero-motion [data-visual="cover-coffee"] img{width:100%;height:100%;object-fit:cover;object-position:50% 55%;transform:scale(1.02)}
-.hero-paper,.hero-ink{position:absolute;inset:-1px;width:calc(100% + 2px);height:calc(100% + 2px);opacity:0;pointer-events:none}
-.hero-controls{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-top:8px;font-size:13px}
+.hero-canvas{position:relative;aspect-ratio:1536/660;isolation:isolate;overflow:hidden;background:#fff}
+.hero-canvas>img{width:100%;height:auto}
+.hero-final{position:absolute;inset:0;opacity:0;background:#fff;will-change:opacity}
+/* Shared 1536 × 660 design canvas. Full SVG is uniformly scaled, never stretched. */
+.hero-final img{position:absolute;left:19.76%;top:29.7%;width:59.1%;height:auto}
+.hero-caption{display:flex;justify-content:space-between;align-items:center;gap:20px;padding-block:19px;border-bottom:1px solid var(--line);font-size:13px}
+.hero-credit{color:#736b61}
+.hero-controls{display:flex;align-items:center;gap:12px;font-size:12px}
 .hero-controls[hidden]{display:none}
-.hero-controls button{font:inherit;border:0;border-radius:0;background:none;color:inherit;cursor:pointer;padding:10px 0;min-height:44px;text-underline-offset:4px}
-.hero-controls button:hover,.hero-controls button[aria-pressed="true"]{text-decoration:underline}
-.hero-controls button:active{transform:translateY(1px)}
-.hero-controls button:focus-visible{outline:2px solid #b92b22;outline-offset:4px}
-.hero-states{display:flex;gap:24px}
-.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-@media(prefers-reduced-motion:reduce){#hero-motion [data-visual="cover-coffee"] img{transform:none}}
+.hero-controls button{padding:8px 0;border:0;background:none;cursor:pointer;font-size:inherit;line-height:1.2;color:#736b61}
+.hero-controls button[aria-pressed=true]{color:var(--ink)}
+.hero-controls button:hover{color:var(--red)}
+.control-rule{width:30px;height:1px;background:#aaa394}
+#hero-toggle{min-width:65px;margin-left:20px;text-align:right;color:var(--ink)}
+@media(max-width:700px){.hero-caption{margin-inline:22px;padding-block:10px;flex-wrap:wrap;gap:8px;font-size:11px}.hero-credit{display:none}.hero-controls{font-size:11px;gap:8px}.control-rule{width:16px}#hero-toggle{min-width:54px;margin-left:10px}.hero-controls button{padding-block:12px}}
+
+#coffee-photo{-webkit-mask-image:linear-gradient(to right,transparent,#000 2%,#000 98%,transparent);mask-image:linear-gradient(to right,transparent,#000 2%,#000 98%,transparent)}
