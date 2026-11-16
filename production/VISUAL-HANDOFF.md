@@ -12,7 +12,7 @@ Keep the tray and card branding discreet. The user liked the smaller card previe
 
 Hide faces throughout the proposed people photography. Prefer a rear view, a crop below the head, or hands at work. Check mirrors and reflections too. A8 is now the framing reference for the brewer; A4 does not authorize a frontal face. Never distort garments or poses just to make a logo visible. From behind a normal apron, only its waistband and ties are visible; its body stays in front.
 
-Aim for an editorial photograph made in an ordinary working café: available light, restrained colour, a casual crop and some unevenness. Cloth can crease, steel can reflect imperfectly and paper can curl slightly. These details should make physical sense. Avoid spotless product renders, exaggerated wear, added grain as camouflage, golden glow, waxy skin, excessive background blur and symmetrical display arrangements. Check hands, garment construction, contact shadows, reflected objects and coffee equipment before handing off a candidate. Do not promise that generated imagery is indistinguishable from photography.
+Latest user direction is more expressive and closer to the references: editorial flash photography, high-key exposure, selective motion or foreground blur, visible film grain and noise. These are now requested camera qualities. Vary them by composition; do not give every frame the same soft daylight treatment. Keep physical detail believable and faces hidden. Avoid repeating embossed/swirl texture, waxy skin, glossy product-render lighting and fake decorative distress. Check hands, garment construction, contact shadows, reflected objects and coffee equipment. Do not promise generated imagery is indistinguishable from photography.
 
 ## What the references establish
 
@@ -70,7 +70,7 @@ Latest user direction: professional, high-level and positive overall. Focus on w
 
 Keep Raagul’s direct language and contractions. Name practical outcomes: helping a first-time visitor choose a coffee, giving the brewer a presence in the photography, or making the business recognisable online. Keep paragraphs short and avoid jargon. “A proposal for how Manwill could build a stronger identity around the way it makes and serves coffee” is the intended register.
 
-Avoid little slogan triplets, “the pour, the pause, the attention”, “distinctly yours”, “a look makes a promise”, “unmistakably”, “territories”, “expressive layers”, or claims of transformation. None of the reference slogans is approved Manwill copy. Poster copy needs its own review before generation.
+Avoid little slogan triplets, “the pour, the pause, the attention”, “distinctly yours”, “a look makes a promise”, “unmistakably”, “territories”, “expressive layers”, or claims of transformation. None of the reference slogans is approved Manwill copy. The user has authorized the current five-piece set, including proposed copy for review. Do not treat its copy as a final brand tagline.
 
 
 ## Application revisions
@@ -85,12 +85,16 @@ The user explicitly selected tray option 1: plain card with coffee glass, source
 
 The latest shirt preview proposes “MAKE YOURSELF A REGULAR.” as an invitation from Manwill. It is a copy option for review, not an approved final tagline. Large yellow lettering and worn-in print were explicitly requested; the small-card direction does not apply to this shirt.
 
-Latest shirt feedback: the text looked overlaid. Both the supplied yellow wordmark and small line must follow the fabric’s physical curvature, folds, weave and local highlights/shadows. Mere noise or uniform distress over undeformed letters does not address this. Keep copy and placement unchanged while correcting print integration.
+The shirt selection is now fixed. Earlier print-realism feedback led to experiments, but the user restored the previous published image because the new wordmark looked modified. Do not continue those experiments.
 
-Do not use people-brewer-printed-preview.png or people-brewer-printed-v2-preview.png as source images: iterative edits introduced coarse artificial swirl texture into the cloth. They failed internal review. The fresh candidate people-brewer-fresh-printed-preview.png was made using only the supplied artwork reference. It removes the coarse swirls and uses an angled rear view with a real fold through the printed lettering. It is the current shirt candidate for review, not an approved main-page image.
+Do not use people-brewer-printed-preview.png or people-brewer-printed-v2-preview.png as source images: iterative edits introduced coarse artificial swirl texture into the cloth. They failed internal review. The fresh angled image people-brewer-fresh-printed-preview.png was rejected by the user for changing the wordmark. It is not a current candidate.
 
 ## Current selection and next set
 
 The latest user instruction overrides the shirt realism experiments: restore `people-brewer-brand-preview.png` unchanged. The fresh angled image was rejected because the wordmark looked modified. Do not repair or regenerate the selected shirt. Tray option 1 remains selected. Both selected exports are copied byte-for-byte under `assets/visuals/`.
 
 The next five pieces are photo-led editorial compositions. Generate photographs without logos or lettering. Add the original supplied SVG directly as a deliberate graphic element in the HTML artwork; preserve its exact path and aspect ratio. This is poster typography, not a simulated print onto a shirt or paper. Typography uses Inter Tight and Instrument Serif, with distinct arrangements informed by the supplied references. This prevents further generator changes to the wordmark. New copy and compositions are for review.
+
+Five new pieces are available in the review page’s `#next-set` section. Source markup and scoped styles are in `production/round-two/`. Generated photo sources and full-size browser-rendered artwork exports are in `/workspace/scratch/manwill-previews/round-two/`; exports preserve the original supplied SVG shapes. These five images await selection for the main proposal. The menu-cover copy is generated as print on paper; its Manwill mark remains an exact SVG graphic outside the paper.
+
+Latest review direction for the five-piece set: typography should be expressive in scale, alignment and its relationship to the photograph, close to the provided Chez Willy, Lunet, April and Dream State examples. Avoid safe small captions parked in a corner for every frame. Keep the exact SVG mark, even when scale, colour or rigid rotation changes. Camera blur/grain is authored into the photographs via image generation, not added as a CSS overlay.

@@ -12,12 +12,21 @@ def data(path, mime):
 svg = ET.parse(root / 'assets/brand/manwill-hand-lettered-v2.svg').getroot()
 path = svg.find('{http://www.w3.org/2000/svg}path').attrib['d']
 template = (root / 'production/motion/review-template.html').read_text()
+template = template.replace('__ROUND_TWO_STYLES__', (root / 'production/round-two/styles.css').read_text())
+template = template.replace('__ROUND_TWO_SECTION__', (root / 'production/round-two/section.html').read_text())
 values = {
     '__FONT_DATA__': data(root / 'assets/inter-tight-latin.woff2', 'font/woff2'),
+    '__SERIF_REGULAR_DATA__': data(root / 'assets/instrument-serif-regular.woff2', 'font/woff2'),
+    '__SERIF_ITALIC_DATA__': data(root / 'assets/instrument-serif-italic.woff2', 'font/woff2'),
     '__COFFEE_DATA__': data(previews / 'craft/cover-coffee-pilot.webp', 'image/webp'),
     '__PRINT_DATA__': data(previews / 'print/discovery-tray-pilot-v2.webp', 'image/webp'),
     '__PRINT_VARIANT_DATA__': data(previews / 'print/discovery-tray-pilot-variant.webp', 'image/webp'),
     '__PEOPLE_DATA__': data(previews / 'hospitality/people-brewer-brand-preview.webp', 'image/webp'),
+    '__CANDID_DATA__': data(previews / 'round-two/people-candid-editorial-fresh.webp', 'image/webp'),
+    '__SOCIAL_DATA__': data(previews / 'round-two/people-social-editorial.webp', 'image/webp'),
+    '__POUR_DATA__': data(previews / 'round-two/craft-pour-editorial.webp', 'image/webp'),
+    '__COUNTER_DATA__': data(previews / 'round-two/craft-poster-editorial.webp', 'image/webp'),
+    '__MENU_DATA__': data(previews / 'round-two/discovery-menu-editorial.webp', 'image/webp'),
     '__MARK_PATH__': path,
     '__MOTION_SCRIPT__': (root / 'production/motion/transition.js').read_text(),
 }

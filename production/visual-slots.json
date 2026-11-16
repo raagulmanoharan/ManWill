@@ -1,6 +1,6 @@
 {
   "wordmark_source": "Use only supplied files. Hand-lettered SVG received at assets/brand/manwill-hand-lettered-v2.svg. Chunky serif wordmark is visible inline; original file still needed. All former agent wordmark studies are superseded.",
-  "generation_status": "User selected tray option 1 and restored the previous straight-on yellow T-shirt (people-brewer-brand-preview), rejecting the fresh frame because the wordmark changed. Both selected applications are approved for the proposal. User explicitly authorized the next set: five photo-led editorial compositions in progress, using the original SVG directly for typography.",
+  "generation_status": "Selected shirt and tray remain fixed and live. Five editorial compositions are complete for review: flash, high-key exposure, selective blur and grain, with expressive typography using the unchanged supplied SVG.",
   "slots": [
     {
       "id": "cover-coffee",
@@ -36,8 +36,18 @@
         "B3"
       ],
       "brief": "A moment around the coffee counter with relaxed posture and a close crop. Hide faces completely; show hands, backs or a crop below the head. Available light or modest flash fill, restrained colour and natural detail. Any physical Manwill mark stays small. Preserve the full portrait.",
-      "production_status": "next_set_authorized",
-      "wordmark_application": "Original supplied SVG as an intentional editorial HTML layer. Photo generation must contain no lettering or logos."
+      "production_status": "editorial_revision_complete_for_review",
+      "wordmark_application": "Original supplied SVG as an intentional editorial HTML layer. Photo generation must contain no lettering or logos.",
+      "review": {
+        "file": "/workspace/scratch/manwill-previews/round-two/exports/people-candid.png",
+        "source_photo": "/workspace/scratch/manwill-previews/round-two/people-candid-editorial-fresh.png",
+        "width": 1122,
+        "height": 1402,
+        "status": "awaiting_user_review",
+        "composition": "production/round-two/section.html",
+        "supporting_copy": "MAKE YOURSELF A REGULAR.",
+        "wordmark_fidelity": "Original supplied SVG d attribute used unchanged, with preserved aspect ratio."
+      }
     },
     {
       "id": "people-brewer",
@@ -77,8 +87,18 @@
         "B4"
       ],
       "brief": "A square image and type composition. Candid photograph with face hidden, close crop, compact bold sans with one deliberate expressive serif/script gesture if approved. Lettering interacts with the photograph. Physical branding is discreet; poster typography may be large. No social-app icons, copied slogan or third-party handles.",
-      "production_status": "next_set_authorized",
-      "wordmark_application": "Original supplied SVG as an intentional editorial HTML layer. Photo generation must contain no lettering or logos."
+      "production_status": "editorial_revision_complete_for_review",
+      "wordmark_application": "Original supplied SVG as an intentional editorial HTML layer. Photo generation must contain no lettering or logos.",
+      "review": {
+        "file": "/workspace/scratch/manwill-previews/round-two/exports/people-social.png",
+        "source_photo": "/workspace/scratch/manwill-previews/round-two/people-social-editorial.png",
+        "width": 1254,
+        "height": 1254,
+        "status": "awaiting_user_review",
+        "composition": "production/round-two/section.html",
+        "supporting_copy": "Make yourself a regular.",
+        "wordmark_fidelity": "Original supplied SVG d attribute used unchanged, with preserved aspect ratio."
+      }
     },
     {
       "id": "discovery-tray",
@@ -121,8 +141,18 @@
         "A2"
       ],
       "brief": "A related menu and cup application in use, with the supplied wordmark. Continue the material world of the tray photograph. No invented prices, origin claims or unconfirmed menu items. Keep the physical mark small and light natural. Follow the revised tray direction; avoid a glossy product mockup.",
-      "production_status": "next_set_authorized",
-      "wordmark_application": "Original supplied SVG as an intentional editorial HTML layer. Photo generation must contain no lettering or logos."
+      "production_status": "editorial_revision_complete_for_review",
+      "wordmark_application": "Original supplied SVG as an intentional editorial HTML layer. Photo generation must contain no lettering or logos.",
+      "review": {
+        "file": "/workspace/scratch/manwill-previews/round-two/exports/discovery-menu.png",
+        "source_photo": "/workspace/scratch/manwill-previews/round-two/discovery-menu-editorial.png",
+        "width": 1086,
+        "height": 1448,
+        "status": "awaiting_user_review",
+        "composition": "production/round-two/section.html",
+        "supporting_copy": "Tell us what you like. We\u2019ll help you choose.",
+        "wordmark_fidelity": "Original supplied SVG d attribute used unchanged, with preserved aspect ratio."
+      }
     },
     {
       "id": "handwritten-poster",
@@ -151,8 +181,18 @@
         "B2"
       ],
       "brief": "Close manual pour-over photograph with warm, imperfect light and a large editorial serif line that belongs to the image. Regular/italic contrast should be purposeful, as in the Lunet reference. Do not copy Small Cup. Big Shift., Love Lunet, or its handle. Approved Manwill wordmark only.",
-      "production_status": "next_set_authorized",
-      "wordmark_application": "Original supplied SVG as an intentional editorial HTML layer. Photo generation must contain no lettering or logos."
+      "production_status": "editorial_revision_complete_for_review",
+      "wordmark_application": "Original supplied SVG as an intentional editorial HTML layer. Photo generation must contain no lettering or logos.",
+      "review": {
+        "file": "/workspace/scratch/manwill-previews/round-two/exports/craft-pour.png",
+        "source_photo": "/workspace/scratch/manwill-previews/round-two/craft-pour-editorial.png",
+        "width": 1122,
+        "height": 1402,
+        "status": "awaiting_user_review",
+        "composition": "production/round-two/section.html",
+        "supporting_copy": "Coffee, by hand.",
+        "wordmark_fidelity": "Original supplied SVG d attribute used unchanged, with preserved aspect ratio."
+      }
     },
     {
       "id": "craft-poster",
@@ -167,8 +207,18 @@
         "A6"
       ],
       "brief": "A second portrait poster with expressive serif type over a believable working coffee setting. Use the Lake House reference for type weight, scale, and its relationship to a dark photograph, not its oven, brand or wording.",
-      "production_status": "next_set_authorized",
-      "wordmark_application": "Original supplied SVG as an intentional editorial HTML layer. Photo generation must contain no lettering or logos."
+      "production_status": "editorial_revision_complete_for_review",
+      "wordmark_application": "Original supplied SVG as an intentional editorial HTML layer. Photo generation must contain no lettering or logos.",
+      "review": {
+        "file": "/workspace/scratch/manwill-previews/round-two/exports/craft-poster.png",
+        "source_photo": "/workspace/scratch/manwill-previews/round-two/craft-poster-editorial.png",
+        "width": 1122,
+        "height": 1402,
+        "status": "awaiting_user_review",
+        "composition": "production/round-two/section.html",
+        "supporting_copy": "BREWED BY HAND",
+        "wordmark_fidelity": "Original supplied SVG d attribute used unchanged, with preserved aspect ratio."
+      }
     },
     {
       "id": "landscape-poster",
@@ -253,5 +303,5 @@
     "src": null,
     "status": "visible_in_chat_original_file_needed"
   },
-  "photography_direction": "Hide faces, including reflections. Use natural light, casual editorial framing and plausible small imperfections. Check anatomy, garment construction, reflections and contact shadows. No exaggerated wear, glossy CGI finish or artificial grain. Keep card branding discreet. T-shirt exception: a large warm-yellow supplied wordmark with lightly worn ink and a small brand-voice line. Poster headline typography may remain large."
+  "photography_direction": "Latest user direction: distinctly editorial photography close to the supplied references, with direct flash, high-key highlights, selective motion/foreground blur, visible film grain and noise. Vary these camera qualities across images instead of applying one uniform look. Hide faces and preserve plausible anatomy, equipment and materials. Grain must not become embossed/repeating swirls or fake paper distress. Selected shirt and tray stay unchanged."
 }
