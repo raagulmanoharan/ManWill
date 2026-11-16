@@ -37,7 +37,7 @@ The latest four references reinforce the image/type relationship. Do not reduce 
 - Print agent: `discovery-tray`, `discovery-menu` only.
 - Craft agent: `cover-coffee`, `craft-pour`, `craft-poster` only.
 - A separate poster agent, after approval: `handwritten-poster`, `landscape-poster`.
-- A separate comparison agent, after approval: the two comparison frames.
+- A separate comparison agent, after approval: the two positive reference directions (coffee knowledge and sense of place). These no longer represent directions to avoid.
 - Parent: the actual shopfront photos, approved asset insertion, testing and publishing.
 
 No wordmark agent is needed. Supplied logo paths will be recorded here when Raagul sends them. At present there are none.
@@ -58,6 +58,8 @@ Suggested delivery sizes are in the manifest, not mandatory source dimensions. R
 
 ## Copy voice
 
-Use the user's messages as the writing sample. He is direct and interested in the specific place: “I liked the place”, “I thought I’d put something together”, “I think we can look at…”. Keep the contractions and first-person point of view, without copying typing mistakes or speech fillers.
+Latest user direction: professional, high-level and positive overall. Focus on what Manwill can build on. Keep detailed diagnostics, execution choices and questions out of the public page. The two comparison frames now explore a positive balance of coffee knowledge and sense of place, not mistakes to avoid. Offer broad proposals for how Manwill can improve its branding. Do not lead with “I visited your place, so I made this”, the cold outreach story, or a personal account of doing the research. Explain what the references suggest, what Manwill could do, and what needs to be understood with the team.
 
-Avoid little slogan triplets, “the pour, the pause, the attention”, “distinctly yours”, “a look makes a promise”, “unmistakably”, “territories”, “expressive layers”, or framing every point as a grand transformation. Say what the design could do and what Raagul still wants to ask the owners. Do not turn a reference's poster headline into a new Manwill claim without review.
+Keep Raagul’s direct language and contractions. Name practical outcomes: helping a first-time visitor choose a coffee, giving the brewer a presence in the photography, or making the business recognisable online. Keep paragraphs short and avoid jargon. “A proposal for how Manwill could build a stronger identity around the way it makes and serves coffee” is the intended register.
+
+Avoid little slogan triplets, “the pour, the pause, the attention”, “distinctly yours”, “a look makes a promise”, “unmistakably”, “territories”, “expressive layers”, or claims of transformation. None of the reference slogans is approved Manwill copy. Poster copy needs its own review before generation.

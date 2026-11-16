@@ -1,6 +1,6 @@
-# Some thoughts for Manwill
+# Branding ideas for Manwill
 
-Raagul’s personal branding proposal for Manwill Brew. The writing follows his outreach: what he liked, what he looked at, and what he would like to discuss with the owners. Built with static HTML, CSS and JavaScript.
+A branding proposal for Manwill Brew by Raagul: high-level research and positive directions to discuss with the team. Built with static HTML, CSS and JavaScript.
 
 ## Preview
 

@@ -79,10 +79,9 @@ a, button { -webkit-tap-highlight-color: transparent; }
 .disclosure-sign::before, .disclosure-sign::after { content: ''; position: absolute; top: 7px; left: 0; width: 16px; height: 1px; background: currentColor; }
 .disclosure-sign::after { transform: rotate(90deg); }
 .research-drawer[open] .disclosure-sign::after { transform: rotate(0); }
-.research-content { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 7%; padding-block: 12px 36px; }
-.research-content h3 { font-size: 23px; line-height: 1.2; letter-spacing: -.6px; margin-bottom: 16px; }
-.research-content p { font-size: 14px; line-height: 1.75; max-width: 350px; }
-.research-content a { display: inline-flex; align-items: center; min-height: 44px; font-size: 12px; margin-top: 12px; text-decoration: underline; text-underline-offset: 5px; }
+.research-content { display: flex; align-items: flex-start; justify-content: space-between; gap: 48px; padding-block: 12px 36px; }
+.research-content p { font-size: 15px; line-height: 1.75; max-width: 660px; }
+.research-content a { display: inline-flex; align-items: center; min-height: 44px; font-size: 12px; margin-top: 0; flex: none; text-decoration: underline; text-underline-offset: 5px; }
 .study-index { display: flex; flex-wrap: wrap; gap: 16px 36px; margin-top: 20px; font-size: 13px; }
 .chapter { padding-top: 92px; }
 .chapter-heading { display: flex; align-items: flex-end; justify-content: space-between; gap: 8%; padding-bottom: 38px; }
@@ -91,16 +90,8 @@ a, button { -webkit-tap-highlight-color: transparent; }
 .people-pair, .visual-pair, .comparison-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; align-items: start; }
 .people-pair > :nth-child(2) { background: #d1d3cb; }
 .visual-pair > :nth-child(2) { background: #d3cec4; }
-.poster-with-note { display: grid; grid-template-columns: 1fr 1fr; gap: 8%; align-items: center; margin-top: 64px; }
-.spread-note { max-width: 450px; padding-block: 32px; }
-.spread-note h3, .question-strip h3 { font-size: clamp(29px, 2.8vw, 44px); font-weight: 500; letter-spacing: -1.2px; line-height: 1.1; }
-.spread-note p { font-size: 16px; line-height: 1.75; max-width: 380px; margin-top: 24px; }
-.spread-note p + p { font-size: 14px; margin-top: 20px; }
-.note-after .spread-note { justify-self: center; }
-.question-strip { display: grid; grid-template-columns: 1fr 1fr; gap: 8%; align-items: start; padding-block: 48px 56px; }
-.question-strip h3 { max-width: 500px; }
-.question-strip p { font-size: 16px; line-height: 1.75; max-width: 380px; }
-.wide-artwork { margin-top: 4px; }
+.standalone-artwork { max-width: 1080px; margin-top: 40px; }
+.wide-artwork { margin-top: 40px; }
 .comparisons { padding-block: 112px 48px; }
 .comparison-copy { padding-top: 24px; max-width: 520px; }
 .comparison-copy h3 { font-size: 23px; letter-spacing: -.5px; line-height: 1.2; }
@@ -149,9 +140,6 @@ a, button { -webkit-tap-highlight-color: transparent; }
   .thinking-heading > p { font-size: 16px; }
   .chapter-heading h2 { font-size: 42px; }
   .chapter-heading > p { width: 39%; font-size: 15px; }
-  .poster-with-note { gap: 6%; }
-  .spread-note p, .question-strip p { font-size: 15px; }
-  .spread-note h3, .question-strip h3 { font-size: 32px; }
   .site-footer { gap: 24px; font-size: 11px; }
 }
 @media (max-width: 700px) {
@@ -174,8 +162,7 @@ a, button { -webkit-tap-highlight-color: transparent; }
   .thinking-heading > p { font-size: 15px; line-height: 1.75; margin-top: 24px; }
   .research-drawer { margin-top: 24px; }
   .research-drawer summary { font-size: 14px; padding-block: 18px; }
-  .research-content { grid-template-columns: 1fr; gap: 28px; padding-block: 16px 28px; }
-  .research-content h3 { font-size: 22px; margin-bottom: 12px; }
+  .research-content { display: block; padding-block: 16px 28px; }
   .research-content p { max-width: none; }
   .research-content a { margin-top: 6px; }
   .study-index { font-size: 11px; gap: 2px 18px; margin-top: 18px; }
@@ -184,15 +171,7 @@ a, button { -webkit-tap-highlight-color: transparent; }
   .chapter-heading h2 { font-size: 37px; line-height: 1.05; letter-spacing: -1.2px; }
   .chapter-heading > p { width: 100%; max-width: 460px; font-size: 15px; line-height: 1.75; margin-top: 22px; }
   .people-pair, .visual-pair, .comparison-pair, .place-pair { grid-template-columns: 1fr; gap: 20px; }
-  .poster-with-note { display: flex; flex-direction: column; align-items: stretch; gap: 28px; margin-top: 36px; }
-  .poster-with-note .spread-note { order: 0; }
-  .poster-with-note .visual-slot { order: 1; }
-  .spread-note { padding: 0; max-width: 460px; }
-  .spread-note h3, .question-strip h3 { font-size: 29px; letter-spacing: -.8px; }
-  .spread-note p { font-size: 15px; margin-top: 20px; max-width: 450px; }
-  .spread-note p + p { font-size: 13px; margin-top: 18px; }
-  .question-strip { display: block; padding-block: 36px; }
-  .question-strip p { font-size: 15px; margin-top: 20px; }
+  .standalone-artwork, .wide-artwork { margin-top: 20px; }
   .comparisons { padding-block: 52px 24px; }
   .comparison-pair { gap: 36px; }
   .comparison-copy { padding-top: 20px; }
