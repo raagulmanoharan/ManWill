@@ -1,6 +1,6 @@
-# Manwill · At the bar. Beyond the bar.
+# Manwill · A reason to return.
 
-An editorial brand proposal by Raagul for Manwill Brew. The current revision includes a white-background edit of the supplied coffee-lettering photograph dissolving into the original wordmark, two campaign compositions, a close brewing photograph, a new whole-bean packaging concept, a take-home brew card, and the selected shirt and tray applications.
+A branding and customer experience proposal by Raagul for Manwill Brew. The narrative connects recognition, an approachable first visit, returning guests and take-home beans. All identities, campaign photographs and packaging are illustrative explorations to discuss with the owners, not a final concept.
 
 **Website:** https://raagulmanoharan.github.io/ManWill/
 
@@ -8,30 +8,26 @@ An editorial brand proposal by Raagul for Manwill Brew. The current revision inc
 
 ```sh
 bash scripts/build.sh
-node tests/hero-motion.cjs
 python3 tests/static-check.py
+node --check script.js
 ```
 
-Pushes to `main` publish `dist/` through the existing GitHub Pages workflow. The build copies only the two current pages and their local assets, then adds content hashes to asset URLs. It does not publish the older artwork review workbook or source references.
-
-For a conventional local preview, serve `dist/` with your preferred static server. The managed Cloud environment uses `sites-preview` with an ignored local preview configuration.
+Pushes to `main` publish `dist/` through the existing GitHub Pages workflow. The build copies the two current pages and their local assets, then adds content hashes to asset URLs. Old motion files, source references and temporary QA pages are not deployed.
 
 ## Current sources
 
-- `index.html`, `styles.css`: the proposal, campaign overlays and editable brew card.
-- `research.html`: context, actual shop photographs, credits and production notes.
-- `hero-motion.js`, `hero-motion.css`: single-play dissolve and accessible manual controls. Pausing preserves the playback direction; hidden tabs and offscreen heroes suspend animation; reduced motion uses instant endpoints.
-- `assets/editorial/coffee-lettering-original.jpg`: unchanged uploaded source, retained in the repository.
-- `assets/editorial/coffee-lettering-white.webp`: background-neutralized hero edit requested in the latest feedback. The website canvas is pure white.
-- `script.js` and `assets/vendor/`: locally vendored GSAP/ScrollTrigger 3.15.1 for one-time heading and artwork reveals. CSS supplies small hover transitions; reduced-motion users get a still page.
-- `assets/brand/manwill-hand-lettered-v2.svg`: unchanged original logotype. Native applications use the entire SVG, without path replacement or distortion.
-- `assets/editorial/{counter,pour,macro,beans}.webp`: the four new optimized generated photographs.
-- `assets/visuals/people-brewer.webp` and `discovery-tray.webp`: previously selected applications, preserved unchanged.
-- `production/editorial/PLAN.md`: current creative brief, asset prompts, source distinctions and implementation decisions.
-- `production/editorial/QA.md`: checks for this revision.
+- `index.html`, `styles.css`: owner-facing proposal, services, campaign overlays and editable brew card.
+- `research.html`: strategic hypothesis, context, actual shop photographs and credits.
+- `assets/editorial/coffee-lettering-white.webp`: still coffee hero on white. No transition, alternate logo, controls or caption strip.
+- `assets/editorial/brewing-editorial.webp`: new close editorial brewing photograph replacing the window image.
+- `assets/editorial/{macro,beans}.webp` and `assets/visuals/people-brewer.webp`: illustrative campaign, packaging and workwear images.
+- `assets/brand/manwill-hand-lettered-v2.svg`: existing exploratory logotype, unchanged.
+- `script.js` and `assets/vendor/`: locally vendored GSAP/ScrollTrigger for one-time heading and artwork reveals. The hero is excluded. Reduced-motion users get a still page.
+- `production/editorial/PLAN.md`: current creative brief and asset provenance.
+- `production/editorial/QA.md`: checks for the current revision.
 
-The current brief supersedes the older instruction to preserve the copy and twelve-image architecture. `production/visual-slots.json`, the old artwork compositions and older motion builders remain historical source material and are no longer used by the site build.
+Unused earlier artwork remains in the repository as history. The production build uses only the current assets, real shop photos on the notes page and the local font.
 
-## Production limits
+## Proposal limits
 
-The main page presents proposed work. Generated people and environments are not documentary photographs of Manwill. Actual shop photographs and credits are on the notes page. The 250 g bags illustrate the packaging system; final coffee names, origin, roast details, pack sizes/materials and required label information need confirmation. Physical mockups are illustrative; final print artwork should use the supplied vector master.
+The business outcomes are goals to agree on and test with the owners. They are not research findings or sales forecasts. Generated photographs do not depict the actual team or premises. Packaging sizes, coffee details, materials and production artwork need a separate brief and approval.

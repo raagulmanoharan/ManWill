@@ -20,14 +20,14 @@
         clearProps: 'transform'
       });
     });
-    document.querySelectorAll('.copy-column, .take-home-copy, .conversation-copy').forEach(group => {
+    document.querySelectorAll('.copy-column, .take-home-copy, .conversation-copy, .offer-list').forEach(group => {
       gsap.from(group.children, {
         y: 18, opacity: 0, duration: .7, stagger: .085, ease: 'power2.out',
         scrollTrigger: { trigger: group, start: 'top 93%', once: true },
         clearProps: 'transform,opacity'
       });
     });
-    document.querySelectorAll('.artwork, .packaging-photo, .shirt-photo, .tray-photo').forEach(art => {
+    document.querySelectorAll('.artwork, .packaging-photo').forEach(art => {
       gsap.from(art, {
         y: 32, opacity: 0, clipPath: 'inset(0% 0% 22% 0%)',
         duration: 1, ease: 'power3.out',

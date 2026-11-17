@@ -1,49 +1,42 @@
-# Editorial revision, 16 November 2026
+# Manwill proposal: owner-facing revision
 
-## Current brief
+## Purpose
 
-The user authorized a full revision and publication, with new imagery, sharper copy, more deliberate editorial layouts, bean packaging and the exact coffee-lettering photograph dissolving to the original wordmark. This supersedes the older instruction to preserve the page copy and twelve-artwork structure. The original SVG remains unchanged. Avoid generic slogans and explanatory text on images.
+Make the case for branding and customer experience work in terms an owner can assess: recognition, approachability, a memorable visit, returning guests and take-home beans. Manual brewing is part of the craft; the proposition should also welcome people who are looking for somewhere interesting to visit.
 
-## Direction
+These are strategic hypotheses and proposed goals, not customer-research findings or sales guarantees. A first phase starts with time at the bar, conversations with the team, a shared priority and a practical way to assess whether it helps.
 
-- Pure white website background, neutral ink and tomato accents. Butter and olive are retained inside the physical packaging and print artwork. Use the existing Inter Tight variable font with one size and weight within each headline.
-- An inviting, conversational voice grounded in personal taste: “What do you call strong?” and “Not sure what you like yet? Good.” These are proposed campaign lines, not claims about current services.
-- Seven photographic frames, each with a distinct role: the exact coffee lettering; a counter exchange; a close pour; an abstract coffee detail; the new bean packaging; the previously selected shirt; the selected tray.
-- Preserve the current shirt and tray files. Do not deploy redundant previous poster variants or the stale review workbook.
-- Photograph texture comes from the generated source itself. No generic repeating texture is baked over faces, hands or products. The website itself has no paper or noise overlay. Texture remains in the photographs and proposed printed objects.
-- Exact native vector applications use the unchanged original SVG via an image or CSS mask. Physical packaging/shirt/card photography is illustrative, not a vector-exact production proof.
+## Presentation
 
-## Page sequence
+1. Still coffee-lettering hero on white. No transition, vector endpoint, controls, credit line or caption strip.
+2. “Make Manwill the place they come back to.” Owner-facing rationale and a visible note that all visual work is illustrative.
+3. Close editorial brewing photograph, with the existing exploratory Manwill SVG overlaid in white.
+4. First-visit experience: clear choices, a personal recommendation and participation in the brew. Macro campaign and workwear demonstrate an inviting voice.
+5. Connect the cup to the next bag: recognisable packaging, useful information and a take-home recipe card.
+6. Explicit offer: brand identity and packaging; photography and video; customer experience strategy.
+7. Start with one priority, agree on success, then build from what is learned.
 
-1. Coffee lettering to wordmark, with manual endpoint and replay/pause controls.
-2. One short proposition: the bar and the beans beyond it.
-3. Counter campaign and a short rationale for conversational language.
-4. Offset photo compositions, one with the wordmark and one with a quiet campaign line.
-5. Bean packaging and an editable, practical take-home brew card.
-6. Selected workwear and tray applications.
-7. Concise project offer and three useful questions for the founders.
+The repeated everyday-applications section and the second pouring photo have been removed from the live page. Selected older files remain as source history. Their presence does not mean they are deployed.
 
-Research, real shop photography and credits remain on a shorter companion page. This is a proposed identity, not a commissioned or approved rebrand. Product range, origin, roast dates and regulatory packaging text need the actual business information before production.
+## Visual treatment and motion
 
-## Hero
+Pure white website background, existing sans-serif typography, clear line breaks, red and olive within the artwork. Fine grain belongs to photographs rather than a page-wide texture. Keep complete image frames and responsive asymmetric layouts.
 
-Original source: `assets/editorial/coffee-lettering-original.jpg`, copied byte-for-byte and retained. The latest user feedback requested a white background. `assets/editorial/coffee-lettering-white.webp` is an image-generation edit that neutralizes the tabletop while keeping the lettering composition and liquid details; this edited derivative is now the live hero. A single shared aspect-ratio canvas contains the complete photo and final paper/vector frame. Final SVG placement uses a uniform scale and fixed design-canvas coordinates; no stretch, photo zoom, distortion or generated substitute. The final vector is a closest optical fit because the liquid photograph is not geometrically identical to the SVG. Autoplay runs once; reduced motion uses instant manual endpoints.
+GSAP/ScrollTrigger reveal headings, copy, artwork and service rows once. CSS handles small link feedback. The hero is never targeted by animation. Reduced-motion preferences disable entrances. Content remains visible when animation libraries are unavailable.
 
-## Generated source briefs
+## New editorial photograph
 
-Built-in image generation was used. The four selected images are `assets/editorial/{counter,pour,macro,beans}.webp`. Full prompts were supplied with the user's image references as photographic/art-direction guidance, not as artwork to reproduce.
+Created with the built-in image-generation tool. The uploaded Roli Brew photograph was a style reference only. The source is `generated_images/exec-f151123c-9433-4cfb-90ae-32bc956c133d.png` in the task workspace. The project asset is `assets/editorial/brewing-editorial.webp` (1536 × 1024, WebP quality 92). Brand lettering is a native SVG overlay, not generated typography.
 
-- **Pour:** close natural South Indian hands pouring translucent black filter coffee from a borosilicate server into a glass on a steel counter. Olive cotton, cream apron, hard flash, amber highlights, deep shadows, fine irregular analog grain. Faces excluded. No generated text.
-- **Counter:** an original dark olive window/counter opening, cream plaster, two brown-skinned hands exchanging black coffee, faded red and butter clothing, afternoon light with flash, grain. Faces excluded. No generated text; exact campaign typography is authored in HTML/CSS.
-- **Macro:** a real-looking close black coffee surface with a few amber bubbles, glass rim, shallow optical focus, tobacco-brown shadows and fine grain. No generated text.
-- **Beans:** two 250 g matte flat-bottom bag concepts in tomato red and olive with butter gussets, supplied wordmark reference, large cropped letterform side, hard low sunlight, real folds and paper texture. Functional cream label reads “WHOLE BEAN COFFEE” and “250 g”. A localized image-generation edit removed an unnecessary generic slogan. No invented origin, certification, roast or date.
+Prompt:
 
-User references are not deployed or added to the repository. The coffee-lettering image is a user-supplied project asset and is deployed.
+> Use case: photorealistic-natural. Create one outstanding editorial coffee campaign photograph, landscape 3:2 format, for a Manwill Brew proposal. The attached reference is a STYLE reference only: intimate crop, direct on-camera flash, tangible glass and liquid, casual human gesture, fine film grain. Create a new composition, not a copy. Scene: a contemporary Indian manual coffee bar. Close torso crop of one South Indian adult barista, face entirely outside the frame, wearing a faded brick-red cotton shirt and a washed charcoal-grey apron. Only two anatomically believable hands. One hand holds the handle of a round clear-glass coffee server at the upper left, pouring a narrow amber-black stream of freshly brewed BLACK COFFEE into a small clear drinking glass held by the other hand near the centre-right. The hands, transparent stream and glass are the subject. The coffee in the server and cup is dark brown, nearly black, not milky tea. Visibly worn cotton weave, real skin pores, unpolished fingernails, condensation and fingerprints on glass, precise physically plausible handles and grips. Hard directional flash, crisp dark shadows, deep olive-black background beyond the cropped torso, controlled glossy highlights, rich colour, fine uneven 35mm film grain, slight natural softness. Composition fills the wide frame closely, asymmetric and tactile, styled like an independent food magazine. The lower left quarter is mostly dark apron fabric to allow a logo overlay later. Do not include a window, a serving hatch, floating arms, takeaway cups, latte art, milk, a decorative cafe interior, steam effects, any text, any logo or watermark. The final photograph should feel observed and editorial, with the intimacy and flash texture of the reference.
 
-## Latest motion and white-background feedback
+## Source and concept distinctions
 
-Use pure white (#fff) for the page, hero final frame and closing section. No warm off-white website canvas. The exact SVG remains unchanged. The white hero derivative is scaled to the original design canvas, with a very small CSS fade at the side margins to remove any residual image boundary.
-
-GSAP and ScrollTrigger 3.15.1 are locally vendored from the official npm package. Section headings reveal by authored line; copy staggers gently; artwork uses a short masked entrance. No scroll hijacking, pinning, looping reveals or parallax crop. All artwork returns to its complete original frame. Effects run once and revert under reduced motion. Links and controls use subtle CSS hover transitions. Content is visible by default if JavaScript is unavailable.
-
-White-hero edit brief: change only the tabletop to neutral pure white; preserve the same coffee lettering, framing, bubbles, window reflections and stray drops; remove gray/off-white tone and heavy surface shadows. The original upload remains available for future edits.
+- The coffee photograph is the existing white-background derivative of the original coffee lettering. No new hero image was generated for this revision.
+- The organic wordmark is exploratory, not presented as Manwill’s approved identity. Its SVG remains unchanged.
+- Campaign photography, packaging and workwear are generated illustrations. They are not photographs of the actual business, products or team.
+- Actual shop photographs appear only on the notes page with their existing sources.
+- The packaging is an exploration, including its 250 g size. Coffee details, materials and the final visual language remain open for discussion.
+- Photography and video in the proposed service scope would be planned around the real place and people.

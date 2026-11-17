@@ -30,4 +30,9 @@ for file in root.glob('*.css'):
 assert Path('assets/brand/manwill-hand-lettered-v2.svg').read_bytes()==(root/'assets/brand/manwill-hand-lettered-v2.svg').read_bytes()
 assert (root/'assets/editorial/coffee-lettering-white.webp').read_bytes()==Path('assets/editorial/coffee-lettering-white.webp').read_bytes()
 assert not (root/'review.html').exists()
-print(f'PASS: {len(pages)} pages, local files and anchors, alt text, CSS assets, exact hero sources, no stale workbook')
+home=(root/'index.html').read_text()
+assert 'hero-motion' not in home and 'hero-final' not in home and 'hero-controls' not in home
+assert not (root/'hero-motion.js').exists()
+assert 'brewing-editorial.webp' in home and 'counter.webp' not in home
+assert 'illustrative explorations' in home.lower() and 'Customer experience strategy' in home
+print(f'PASS: {len(pages)} pages, local links and assets, alt text, static coffee hero, editorial replacement and proposal context')
